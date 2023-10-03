@@ -1,0 +1,349 @@
+
+/* index */
+.banner{
+    background-image: url('../Imagenes/kidsmiling.jpg'); 
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
+    animation: a 2s ease infinite alternate;
+    min-height: 100vh;
+}
+
+.div1 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+}
+
+
+.icono{
+    width: 80px; /* Tamaño del icono */
+    height: 80px;
+    background-image: url('../Imagenes/diente.png');
+    background-size: cover;
+    /* position: fixed; */
+    bottom: 300px;
+    left: 50%;
+    
+    
+}
+
+.icono1{
+    width: 80px; /* Tamaño del icono */
+    height: 80px;
+    background-image: url('../Imagenes/facebook.svg');
+    background-size: cover;
+    /* position: fixed; */
+    bottom: 300px;
+    left: 50%;
+    
+    
+}
+
+.icono2{
+    width: 80px; /* Tamaño del icono */
+    height: 80px;
+    background-image: url('../Imagenes/instagram.svg');
+    background-size: cover;
+    /* position: fixed; */
+    margin-left: 20px;
+    margin-right: 20px;
+    
+}
+
+.icono3{
+    width: 80px; /* Tamaño del icono */
+    height: 80px;
+    background-image: url('../Imagenes/youtube.png');
+    background-size: cover;
+    /* position: fixed; */
+    bottom: 300px;
+    left: 50%;
+    
+    
+}
+
+
+.container1{
+    /* background-color: beige; */
+    width: 450px;
+    margin-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 15px;
+
+}
+
+.error {
+    border: red solid 1px;
+}
+
+
+/* html,body{
+background-image: url('http://getwallpapers.com/wallpaper/full/a/5/d/544750.jpg');
+
+} */
+
+/* login */
+.container{
+height: 100%;
+align-content: center;
+}
+
+.card{
+height: 370px;
+margin-top: auto;
+margin-bottom: auto;
+width: 400px;
+background-color: rgba(242, 242, 255, 0.05) !important;
+}
+
+.card-header h3{
+color: white;
+}
+
+.input-group-prepend span{
+width: 50px;
+background-color: #12d4ff;;
+color: black;
+border:0 !important;
+}
+
+.login_btn{
+  color: #00bcd4;
+  background-color: transparent;
+  border-color: #12d4ff;
+  border-radius: 5px;
+  border-width: 1px;
+  width: 90px;
+  padding: 2px;
+} 
+
+.login_btn:hover {
+  color: black;
+  background-color: #12d4ff;
+  border-color: #12d4ff;
+}
+
+/* Homepage */
+/* Estilos para el header */
+
+.navbar {
+    background-color: #fff; /* Color de fondo para el menú de navegación */
+}
+
+.navbar a {
+    color: #333; /* Color del texto del menú de navegación */
+}
+
+.navbar-nav {
+    flex-direction: row; 
+    margin-right: 20px;
+}
+
+.navbar-nav .nav-item {
+    margin-right: 20px; 
+    padding: 0 10px; 
+    font-weight: bold; 
+}
+
+.header-social-links a {
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+.header-social-links a i {
+  transition: color 0.3s; 
+}
+
+.navbar-toggler {
+  border: none; 
+}
+
+  /* Estilo para dispositivos pequeños */
+  @media (max-width: 767px) {
+    .navbar-toggler {
+        order: 3; 
+    }
+
+    .navbar-collapse {
+        order: 4; 
+    }
+
+    .header-social-links {
+        order: 2;
+    }
+}
+
+
+/* hero */
+#bannerdentist {
+  width: 100%;
+  height: 60vh;
+  background-image: url("../Imagenes/dentist.jpg");
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
+  background-size: cover;
+  position: relative;
+  padding: 0;
+  background-position: center top; /* Set the initial background position */
+}
+
+
+  #bannerdentist:before {
+    content: "";
+    /* background: rgba(56, 64, 70, 0.7); */
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  #bannerdentist.container {
+    z-index: 2;
+  }
+  
+  #bannerdentist h1 {
+  margin: 0 0 10px 0;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  color: #fff;
+}
+  
+  #bannerdentist h2 {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 30px;
+  }
+  
+  #bannerdentist span {
+    color: #00bcd4;
+  }
+  
+  .btn-agenda-cita, .btn-cotiza {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #00bcd4;
+    border: none;
+    padding: 15px 30px;
+    margin: 10px 10px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-agenda-cita:hover, .btn-cotiza:hover {
+    background-color: black;
+  }
+
+
+  /* .about {
+    padding: 10px 0;
+  }
+  
+  .about h3 {
+    font-weight: 600;
+    font-size: 32px;
+  } */
+  
+  .about ul {
+    list-style: none;
+    padding: 0;
+    font-size: 15px;
+  }
+  
+  .about ul li+li {
+    margin-top: 10px;
+  }
+  
+  .about ul li {
+    position: relative;
+    padding-left: 26px;
+  }
+  
+  .about ul i {
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 22px;
+    color: #3498db;
+  }
+  
+  .about .icon-boxes {
+    padding-top: 10px;
+  }
+  
+  .about .icon-boxes h4 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 5px;
+  }
+  
+  .about .icon-boxes i {
+    font-size: 48px;
+    color: #3498db;
+  }
+  
+  .about .icon-boxes p {
+    font-size: 15px;
+    color: #848484;
+  }
+  
+
+  /* # Team */
+.team .member {
+  text-align: center;
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+  padding: 30px 20px;
+  background: #fff;
+}
+
+.team .member img {
+  max-width: 60%;
+  border-radius: 50%;
+  margin: 0 0 30px 0;
+}
+
+.team .member h4 {
+  font-weight: 700;
+  margin-bottom: 2px;
+  font-size: 18px;
+}
+
+.team .member span {
+  font-style: italic;
+  display: block;
+  font-size: 13px;
+}
+
+.team .member p {
+  padding-top: 10px;
+  font-size: 14px;
+  font-style: italic;
+  color: #aaaaaa;
+}
+
+.team .member .social {
+  margin-top: 15px;
+}
+
+.team .member .social a {
+  color: #919191;
+  transition: 0.3s;
+}
+
+.team .member .social a:hover {
+  color: #3498db;
+}
+
+.team .member .social i {
+  font-size: 18px;
+  margin: 0 2px;
+}
