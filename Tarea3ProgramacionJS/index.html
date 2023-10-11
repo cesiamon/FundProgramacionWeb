@@ -1,19 +1,140 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <title>CENFOTEC</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="/favicon.png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <link href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
-<body>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.png">
+    <link rel="stylesheet" href="./css/styles.css">
+    
+    <!-- CARGA DEL FRAMEWORK -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.8/lottie.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+        crossorigin="anonymous">
 
-<header>
+    <title>CENFOTEC</title>
+</head>
+
+<style>
+    .mainSection{
+        background-image: linear-gradient(to bottom, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);        height: 100vh;
+    }
+    .glow-on-hover {
+        margin: 7px;
+   width: 100px;
+    height: 40px;
+    border: none;
+    text-align: center;
+    outline: none;
+    color: #005B97;
+    background: #F87895;
+    cursor: pointer;
+    position: relative;
+    z-index: 3;
+    border-radius: 55px; 
+    font-weight: bold; 
+    font-size: 18px; 
+    transition: background 0.3s ease, color 0.3s ease; 
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+    
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: #F87895;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #C3FCF1;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+/* Media query para el Samsung Galaxy S8+ */
+@media (max-width: 360px) {
+
+    .mainSection{
+        height: auto;
+    }
+
+    .buttonscontainer{
+        position:relative;
+        height: auto;
+    }
+    .navbar {
+        padding: 5px;
+    }
+
+    .glow-on-hover {
+        width: 120px;
+        height: 40px;
+        font-size: 14px;
+    }
+
+    .lottie-icon {
+        width: 80px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+
+    footer{
+        position: relative;
+    }
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+</style>
+
+
+<body>
+    <div>
+        <header>
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <div class="container">
+                <div class="container-fluid">
                     <a class="navbar-brand" href="#">CENFOTEC</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -36,45 +157,115 @@
                     </div>
                 </div>
             </nav>
-</header>
-
-<section>
+        </header>
+    </div>
     
+    <section class="mainSection d-flex align-items-center justify-content-center">
+        <div class="row" style="margin-bottom: 80px;">
+            <div class="col-md-6">
+                <div class="text-center">
+                    <lottie-player src="https://lottie.host/f1bd29c0-3c9d-40d1-bd28-151cffb2c5fa/3l4BOqkwDV.json" autoplay loop style="width:50%" class="container"></lottie-player>
+                </div>
+                <h1 class="text-center mt-5" style="color: #005B97; font-weight: 700;"> Tarea #2</h1>
+                <h2 class="text-center" style="color: #005B97; font-weight: 400;">Índice de retos</h2>
+                <h6 class="text-center ">Prof.Francisco Jiménez Bonilla</h6>
+            </div>
+            <div class=" buttonscontainer col-md-6 text-center">
+                <div>
+                    <div>
+                        <a href="Reto1.html" target="_blank">
+                            <button class="glow-on-hover" type="button">Reto 1</button>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="Reto2.html" target="_blank">
+                            <button class="glow-on-hover" type="button">Reto 2</button>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="Reto3.html" target="_blank">
+                            <button class="glow-on-hover" type="button">Reto 3</button>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="Reto4.html" target="_blank">
+                            <button class="glow-on-hover" type="button">Reto 4</button>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="Reto5.html" target="_blank">
+                            <button class="glow-on-hover" type="button">Reto 5</button>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="Reto6.html" target="_blank">
+                            <button class="glow-on-hover" type="button">Reto 6</button>
+                        </a>
+                    </div>
 
-</section>
+                    <div>
+                        <a href="Reto7.html" target="_blank">
+                            <button class="glow-on-hover" type="button">Reto 7</button>
+                        </a>
+                    </div>
 
-<footer>
-            <div class="divP1 bg-dark text-white py-3">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-7 text-center text-md-left">
-                            <p class="mb-md-0">&copy; 2023 CENFOTEC. Todos los derechos reservados.</p>
-                        </div>
-                        <div class=" divP col-md-5 text-center text-md-right">
-                            <p class="mb-0">Trabajo por <a href="#" class="external text-white">Cesia Montenegro</a></p>
-                        </div>
+                    <div>
+                        <a href="Reto8.html" target="_blank">
+                            <button class="glow-on-hover" type="button">Reto 8</button>
+                        </a>
+                    </div>
+
+                    <div>
+                        <a href="Reto9.html" target="_blank">
+                            <button class="glow-on-hover" type="button">Reto 9</button>
+                        </a>
+                    </div>
+
+                    <div>
+                        <a href="Reto10.html" target="_blank">
+                            <button class="glow-on-hover" type="button">Reto 10</button>
+                        </a>
                     </div>
                 </div>
+                
+                
             </div>
-            
- </footer>
-
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
- <!-- libreria SWEETALERTE-->
- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
- <!-- interactividad Lottie JS-->
- <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.13/lottie.min.js"></script>
- <!-- libreria Lottie JS-->
- <script src="https://unpkg.com/@lottiefiles/lottie-player@0.3.0/dist/lottie-player.js"></script>
-
-    <!-- cargar programacion JS -->
-   <script src="js/Reto1.js"></script>
-   
+        </div>
+    </section>
 
 
 
-
-</body>
+    <!-- CARGA DE COMPLEMENTOS ITERATIVOS -->
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"
+    ></script>
     
-
+    <script>
+        // Inicializa la animación Lottie
+        const animation = lottie.loadAnimation({
+            container: document.querySelector('.container'), // Selecciona el contenedor de la animación
+            renderer: 'svg', // Elige el renderizador (puede ser 'svg' o 'canvas')
+            loop: true, // Repetir la animación
+            autoplay: true, // Reproducir automáticamente la animación
+            path: 'https://lottie.host/f1bd29c0-3c9d-40d1-bd28-151cffb2c5fa/3l4BOqkwDV.json' // URL de la animación JSON
+        });
+    </script>
+<footer style="background-color: #0085C3;">
+    <div class=" divP1  text-white py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 text-center text-md-left">
+                    <p class="mb-md-0">&copy; 2023 CENFOTEC. Todos los derechos reservados.</p>
+                </div>
+                <div class=" divP col-md-5 text-center text-md-right">
+                    <p class="mb-0">Diseño de página por <a href="#" class="external text-white">Cesia Montenegro</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</footer>
+</body>
 </html>
