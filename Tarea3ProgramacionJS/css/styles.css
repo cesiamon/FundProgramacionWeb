@@ -1,0 +1,13 @@
+.error{
+    border: 2px solid red !important; 
+}
+
+footer{
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+}
+
+/* .error2{
+    border-bottom: solid 2px red !important;
+} */
