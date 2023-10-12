@@ -1,4 +1,5 @@
 //evento que carga la funcion automáticamente...
+
 window.onload = function() {
     //evento que permite cambiar el objeto onchange    
     document.getElementById("lugaresCanada").onchange = function(e) {
@@ -40,12 +41,20 @@ window.onload = function() {
 
     // Función del botón Reiniciar 
     document.getElementById("btn-clean").onclick = function() {
+
         // Limpia los textos informativos de los lugares...
         document.getElementById("output-cityName").innerHTML = "";
         document.getElementById("output-cityDescription").innerHTML = "";
         // Dejar el select con la opción por defecto...
         document.getElementById("lugaresCanada").value = "";
-    };
-};
+        document.getElementById("output-img").innerHTML = "";
 
+        Swal.fire({
+            icon: 'success',
+            title: 'Éxito',
+            text: 'Cargando informacion, un momento por favor...',
+            timer: 1000,
+        });
+    }
+    };
 };

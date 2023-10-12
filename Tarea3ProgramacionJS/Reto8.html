@@ -134,12 +134,13 @@ label {
 }
 
 .login-btm {
-    float: left;
+    /* float: left; */
+    margin-left: 255px;
 }
 
 .login-button {
     /* padding-right: 0px; */
-    text-align: right;
+    /* text-align: right; */
     margin-bottom: 25px;
 }
 
@@ -153,9 +154,34 @@ label {
     padding: 0px;
 }
 </style>
-
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">Reto #8</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sobre Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
 <body>
-    <div class="container">
+    <div class="container" style="height:100vh;">
         <div class="row">
             <div class="col-lg-3 col-md-2"></div>
             <div class="col-lg-6 col-md-8 login-box">
@@ -199,7 +225,7 @@ label {
                                 <div class="col-lg-6 login-btm login-text">
                                     <!-- Error Message -->
                                 </div>
-                                <div class="col-lg-6 login-btm login-button text-center">
+                                <div class="col-lg-6 login-btm login-button">
                                     <button type="button" class="btn btn-outline-primary" id="ingresar">INGRESAR</button>
                                 </div>
                             </div>
@@ -208,11 +234,17 @@ label {
                 </div>
                 <div class="col-lg-3 col-md-2"></div>
             </div>
+
+            <div class="text-center" style="margin-top:60px;margin-bottom: 100px;">
+                <a href="./index.html">
+                    <button type="button" class="btn btn-outline-light" >Index</button>
+                </a>
+            </div>
         </div>
 
-<footer class="footer text-center">
-    <div class="container">
-                <p>&copy; 2023 CENFOTEC. Todos los derechos reservados.</p>
+<footer class="footer text-light">
+    <div class="container-fluid">
+        <p class="text-center" style="margin-right:300px;">&copy; 2023 CENFOTEC. Todos los derechos reservados.</p>
     </div>
 </footer>
 
