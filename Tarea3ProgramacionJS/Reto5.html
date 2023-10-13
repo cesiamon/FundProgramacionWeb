@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous/" />
+    <link rel="icon" href="favicon.png" />
+    <link rel="stylesheet" href="css/font/flaticon.css">
+    <title>Reto 5 - 6 - CESIA</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<style>
+    /* Add custom styles for the footer here */
+    .footer {
+        background-color: #f8f9fa;
+        padding: 20px 0;
+    }
+
+    .footer p {
+        margin-bottom: 0;
+    }
+
+    #color-picker input[type="radio"] {
+    /* Hace que el fondo sea fijo (no cambie al hacer clic) */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    /* background: transparent; */
+
+    appearance: none;
+    /* Agrega un círculo personalizado para los radios */
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}
+
+#color-picker input[type="radio"]:hover {
+        border: 2px solid rgb(31, 98, 255); /* Agrega un borde azul al hacer hover */
+    }
+
+/* .almacenamiento-button.active {
+            border: 2px solid rgb(31, 98, 255);
+} */
+
+#black {
+    background-color: #576061; 
+}
+#purple {
+    background-color: #602f6b; 
+}
+
+#silver {
+    background-color: #C0C0C0;
+}
+
+#gold {
+    background-color: #C5B358;
+}
+
+.border1{
+	border: 2px solid red;
+}
+
+</style>
+
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">Reto #5 y #6</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sobre Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<section class="container">
+    <div class="row"> 
+        <div class="col-sm-7 col-md-7 col-lg-6">
+            <div class="text-center logo2 pt-5">
+            <img src="img/iphones/iPhones.png" alt="" id="imagen" style="height: 300px;">
+            <img src="" alt="" id="imagen2" style="height: 300px;">
+            </div>
+        </div>
+
+        <div class="col-sm-7 col-md-7 col-lg-6">
+            <div class="inputs pt-4">
+                <h1>IPHONE 14</h1>
+                    <p>iPhone 14 de pies a cabeza.</p>
+                    <p>El iPhone 14 te permite captar detalles increíbles gracias a su cámara gran angular de 48 MP. Además, trae la Dynamic Island y una pantalla siempre activa, para que puedas interactuar con tu iPhone de una forma completamente nueva. Y viene con Detección de Choques, una funcionalidad de seguridad que pide ayuda cuando no estás en condiciones de hacerlo.</p>
+
+                    <div class="colorInfo">
+                
+                    <form name="color-picker">
+                        <input type="radio" name="color" id="black" value="black" onclick="selectColor(this)" > 
+                        <input type="radio" name="color" id="purple" value="purple" onclick="selectColor(this)">
+                        <input type="radio" name="color" id="silver" value="silver" onclick="selectColor(this)">
+                        <input type="radio" name="color" id="Gold" value="gold" onclick="selectColor(this)" >
+                    </form>
+                    </div>
+
+                <div class="AlmacenamientoButtons">
+                    <p></p>
+                    <button class=" btn btn-outline-secondary" id="storage_128" onclick="selectStorage(this)">128GB</button>
+                    <button class=" btn btn-outline-secondary" id="storage_256" onclick="selectStorage(this)">256GB</button>
+                    <button class=" btn btn-outline-secondary"id="storage_512" onclick="selectStorage(this)">512GB</button>
+                </div>
+
+                <div class="">
+                    <p></p>
+                    <button id="type_pro" class=" btn btn-outline-secondary" value="iPhonePro" onclick="selectType(this)">iPhone Pro</button>
+                    <button id="type_max" class=" btn btn-outline-secondary"value="iPhoneProMax" onclick="selectType(this)">IPhone Pro Max</button>
+                </div>
+
+                <div class="carritoButton">
+                    <button class="btn btn-primary" style="width:2\100px;margin-top: 10px;" onclick="calcular()">Calcular</button>
+               
+                    <button class="btn btn-primary"style="width:2\100px;margin-top: 10px;" id="btn-clean" onclick="limpiar()">Limpiar</button>
+                </div>
+
+                <div class="montosInfo" style="display:none; margin-top: 20px;">
+                    
+                    <div style="display: flex;">
+
+                    
+                    <div style="display: flex;">
+                    <label>Precio Total:</label>
+                    <div id="precioTotal"></div>
+                    </div>
+
+                    <div style="display: flex;margin-left: 20px;">
+                    <label>Cuota Mensual:</label>
+                    <div id="cuotaMensual"></div>
+                    </div>
+                    
+                </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<Section style="margin-left: 40px;margin-top: 0px;">
+    <a href="./index.html">
+        <button type="button" class="btn btn-outline-dark" >Index</button>
+    </a>
+</Section>
+
+<footer class="footer text-center">
+    <div class="container">
+        <p>&copy; 2023 CENFOTEC. Todos los derechos reservados.</p>
+    </div>
+</footer>
+
+<script src="js/Reto5.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</body>
+</html>

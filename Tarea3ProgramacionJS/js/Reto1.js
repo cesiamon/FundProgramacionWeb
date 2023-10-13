@@ -39,15 +39,15 @@ function login() {
         
 
     }else{ 
-        error = false
+        // error = false
     }
 
     }
 
 
 
-    if (!error) {
-        if (user_input === username && pass_input === password) {
+    if (error == false) {
+        if (user_input.value === username && pass_input.value === password) {
             Swal.fire({
                 title: "Credenciales correctas",
                 showConfirmButton: false,

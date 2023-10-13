@@ -11,3 +11,7 @@ footer{
 /* .error2{
     border-bottom: solid 2px red !important;
 } */
+
+.border1{
+	border: 2px solid red;
+}
