@@ -32,7 +32,10 @@
     width: 220px;
   }
 
-  
+  .iconsInside {
+    text-decoration: none; /* Quitar el subrayado de los enlaces */
+    color: white; /* Cambiar el color del texto a blanco */
+}
 </style>
     <header style="background-color: #272829;">
         
@@ -40,7 +43,7 @@
             <a href="./index.html">
                 <button type="button" class="btn btn-outline-light" >Index</button>
             </a>
-            <h1 class="text-light">Cinema MAX</h1>
+            <h1 class="text-light" id="cinemaTitle">Cinema MAX</h1>
 
             <select id="cinemaSelector2" style="display: none;"  onchange="CineOpcionEscogida2()">
                 <option disabled hidden selected>Seleccione una opción</option>
@@ -50,8 +53,8 @@
             </select>
 
             <div class="icons py-2">
-                <a href="/"><span class="flaticon-001-facebook"></span></a>
-                <a href="/"><span class="flaticon-011-instagram"></span></a>
+                <a  class="iconsInside" href="/"><span class="flaticon-001-facebook"></span></a>
+                <a  class="iconsInside" href="/"><span class="flaticon-011-instagram"></span></a>
             </div>
 
         </div>

@@ -190,6 +190,7 @@ function CineOpcionEscogida() {
 }  
 
 
+
 function CineOpcionEscogida2(){
     var selectedValue2 = cinemaSelector2.value;
 
@@ -298,3 +299,6 @@ function CineOpcionEscogida2(){
 
     
 } 
+
+
+
