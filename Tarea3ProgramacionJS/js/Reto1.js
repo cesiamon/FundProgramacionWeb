@@ -44,8 +44,6 @@ function login() {
 
     }
 
-
-
     if (error == false) {
         if (user_input.value === username && pass_input.value === password) {
             Swal.fire({
