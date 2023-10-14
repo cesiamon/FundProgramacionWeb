@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous/" />
+    <link rel="icon" href="favicon.png" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font/flaticon.css">
+    <title>Reto 9 - CESIA</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+</head>
+<style>
+    .footer {
+        background-color: #f8f9fa;
+        padding: 20px 0;
+    }
+
+    .footer p {
+        margin-bottom: 0;
+    }
+
+    .payment-image {
+    width: 30px;
+    height: 20px;
+    margin-right: 5px;
+}
+</style>
+
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">Reto #9</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sobre Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+    <div class="container">
+        <h1 class="mt-4">Elija un método de Pago</h1>
+        <form id="payment-form" class="mt-4">
+            <div class="form-group">
+                <div class="custom-control custom-radio">
+                    <input type="radio" id="visaRadio" name="payment-method" value="visa" class="custom-control-input">
+                    <label class="custom-control-label" for="visaRadio">
+                        <img src="img/tarjetas/visa.png" alt="Visa" class="payment-image">
+                        Visa
+                    </label>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="custom-control custom-radio">
+                    <input type="radio" id="paypalRadio" name="payment-method" value="paypal" class="custom-control-input">
+                    <label class="custom-control-label" for="paypalRadio">
+                        <img src="img/tarjetas/paypal.png" alt="PayPal" class="payment-image">
+                        PayPal
+                    </label>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="custom-control custom-radio">
+                    <input type="radio" id="amexRadio" name="payment-method" value="amex" class="custom-control-input">
+                    <label class="custom-control-label" for="amexRadio">
+                        <img src="img/tarjetas/amex.png" alt="American Express" class="payment-image">
+                        American Express
+                    </label>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="custom-control custom-radio">
+                    <input type="radio" id="mastercardRadio" name="payment-method" value="mastercard" class="custom-control-input">
+                    <label class="custom-control-label" for="mastercardRadio">
+                        <img src="img/tarjetas/mastercard.png" alt="MasterCard" class="payment-image">
+                        MasterCard
+                    </label>
+                </div> 
+            </div>
+            <!-- Add more payment methods as needed -->
+
+            <div class="mt-4" style="display: none; margin-bottom: 70px;" id="divPaymentInfo">
+                <h2 class="text-center mb-4">Información de Pago</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="cardName">Nombre de la Tarjeta</label>
+                        <input type="text" class="form-control" id="cardName" name="cardName" placeholder="John Doe">
+                    </div>
+                    <div class="form-group">
+                        <label for="cardNumber">Número de Tarjeta</label>
+                        <input type="text" class="form-control" id="cardNumber" name="cardNumber" placeholder="**** **** **** ****">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="expirationDate">Fecha de Vencimiento</label>
+                            <input type="text" class="form-control" id="expirationDate" name="expirationDate" placeholder="MM/YY">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="billingAddress">Dirección de Facturación</label>
+                            <input type="text" class="form-control" id="billingAddress" name="billingAddress" placeholder="Calle, Av, Apt.">
+                        </div>
+                    </div>
+
+                    <div class="">
+                    <input type="checkbox" id="checkbox" name="" value="" class="">
+                    <label class="" for="">
+                        Tengo un codigo de descuento.
+                    </label>
+                    
+                    <input style="display: none; width: 200px;" type="text" class="form-control" id="discountCode" name="" placeholder="XX-XX-XX">
+                    
+                </form>
+            </div>
+            
+            <button style="margin-top: 20px;" type="button" id="pay-button" class="btn btn-primary">Pagar</button>
+        </form>
+        <div id="payment-result" class="mt-3"></div>
+    </div>
+
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
+
+
+<script src="js/Reto9.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<footer class="footer text-center">
+    <div class="container">
+        <p>&copy; 2023 CENFOTEC. Todos los derechos reservados.</p>
+    </div>
+</footer>
+</body>
+</html>
