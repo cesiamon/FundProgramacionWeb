@@ -1,5 +1,3 @@
-
-
 $("#r0").click(function() {
     Swal.fire({
         icon: 'info',
@@ -116,3 +114,86 @@ $("#r5").click(function() {
         }
     )
 });
+
+$("#product1").click(function() {
+    Swal.fire({
+        title: 'Crema Hidratante',
+        text: 'Nuestra crema hidratante es enriquecida con ingredientes naturales para mantener tu piel suave y saludable. ¡Dale a tu piel la hidratación que se merece!',
+        icon: 'smile',
+        iconColor: '#009688',
+        position: 'top-end',
+        showClass: {
+            popup: 'animated bounceInRight'
+        },
+        hideClass: {
+            popup: 'animated bounceOutRight'
+        },
+    });
+});
+
+$("#product2").click(function() {
+    Swal.fire({
+        title: 'Limpiador Facial',
+        text: 'Nuestro limpiador facial suave elimina eficazmente la suciedad y el maquillaje, dejando tu piel fresca y radiante. ¡Dale a tu piel una limpieza profunda!',
+        icon: 'star',
+        iconColor: '#FFD700',
+        position: 'top-start',
+        showClass: {
+            popup: 'animated fadeInDownBig'
+        },
+        hideClass: {
+            popup: 'animated fadeOutUpBig'
+        },
+    });
+});
+
+$("#product3").click(function() {
+    Swal.fire({
+        title: 'Serum Antiarrugas',
+        text: 'Nuestro serum antiarrugas está formulado con potentes ingredientes que ayudan a reducir las arrugas y rejuvenecer tu piel. ¡Luce más joven y radiante!',
+        icon: 'heart',
+        iconColor: '#FF5733',
+        position: 'bottom-end',
+        showClass: {
+            popup: 'animated zoomIn'
+        },
+        hideClass: {
+            popup: 'animated zoomOut'
+        },
+    });
+});
+
+$("#product4").click(function() {
+    Swal.fire({
+        title: 'Protector Solar',
+        text: 'Nuestro protector solar de amplio espectro protege tu piel de los daños causados por los rayos UV. ¡Mantén tu piel segura y saludable bajo el sol!',
+        icon: 'sun',
+        iconColor: '#FDB813',
+        position: 'bottom-start',
+        showClass: {
+            popup: 'animated bounceInLeft'
+        },
+        hideClass: {
+            popup: 'animated bounceOutLeft'
+        },
+    });
+});
+
+$("#product5").click(function() {
+    Swal.fire({
+        title: 'Mascarilla Facial',
+        text: 'Nuestra mascarilla facial de lujo nutre tu piel y la revitaliza. Disfruta de un spa en casa con nuestra mascarilla de alta calidad.',
+        icon: 'spa',
+        iconColor: '#795548',
+        position: 'center',
+        showClass: {
+            popup: 'animated flipInX'
+        },
+        hideClass: {
+            popup: 'animated flipOutX'
+        },
+    });
+});
+
+
+
