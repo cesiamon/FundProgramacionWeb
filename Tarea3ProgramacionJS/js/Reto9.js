@@ -17,12 +17,9 @@ document.addEventListener('DOMContentLoaded', function () {
     const discountCodeInput = document.getElementById('discountCode');
 
     checkbox.addEventListener('change', function () {
-        // Check if the checkbox is checked
         if (checkbox.checked) {
-            // Display the discountCode input field if it is checked
             discountCodeInput.style.display = 'block';
         } else {
-            // Hide the discountCode input field if it is not checked
             discountCodeInput.style.display = 'none';
         }
     });
@@ -30,24 +27,19 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 document.addEventListener('DOMContentLoaded', function () {
-    // Obtén el botón "Pay"
     const payButton = document.getElementById('pay-button');
 
-    // Agrega un controlador de eventos al botón "Pay"
     payButton.addEventListener('click', function () {
-        // Obtiene los campos de entrada
         const cardNameInput = document.getElementById('cardName');
         const cardNumberInput = document.getElementById('cardNumber');
         const expirationDateInput = document.getElementById('expirationDate');
         const billingAddressInput = document.getElementById('billingAddress');
 
-        // Elimina las clases de estilo previas para restablecer los bordes
         cardNameInput.classList.remove('error');
         cardNumberInput.classList.remove('error');
         expirationDateInput.classList.remove('error');
         billingAddressInput.classList.remove('error');
 
-        // Verifica si los campos están vacíos y aplica el estilo de borde rojo
         if (cardNameInput.value.trim() === '') {
             cardNameInput.classList.add('error');
         }
@@ -61,7 +53,6 @@ document.addEventListener('DOMContentLoaded', function () {
             billingAddressInput.classList.add('error');
         }
 
-        // Verifica si hay campos vacíos y muestra la alerta de error
         if (cardNameInput.value.trim() === '' || cardNumberInput.value.trim() === '' || expirationDateInput.value.trim() === '' || billingAddressInput.value.trim() === '') {
             Swal.fire({
                 icon: 'error',
@@ -69,11 +60,10 @@ document.addEventListener('DOMContentLoaded', function () {
                 text: 'Campos vacíos. Intentar de nuevo por favor.',
             });
         } else {
-            // Si todos los campos están llenos, muestra la alerta de éxito
             Swal.fire({
                 icon: 'success',
                 iconColor: '#1df914',
-                text: 'Informacion verifica!',
+                text: 'Informacion verificada!',
             });
         }
     });

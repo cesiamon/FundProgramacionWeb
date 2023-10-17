@@ -1,12 +1,8 @@
-//evento que carga la funcion automáticamente...
 
 window.onload = function() {
-    //evento que permite cambiar el objeto onchange    
     document.getElementById("lugaresCanada").onchange = function(e) {
-        //destino del valor seleccionado por el usuario
         let n = e.target.value;
-        //expresiones que guardan las imágenes de los lugares y la información de cada uno...
-        //las fotos se deben de guardar en una subcarpeta dentro de img llamada lugaresCanada
+
         let imagen = "<img src='img/lugaresCanada/" + n + ".jpeg' class='img-fluid img-thumbnail rounded' alt='Lugar' />";
         let text = ["Atracción: Parque Nacional Banff y el Lago Louise (Alberta)",
             "Atracción: Cataratas del Niágara (Ontario)",
@@ -20,7 +16,6 @@ window.onload = function() {
         document.getElementById("output-img").innerHTML = imagen;
         document.getElementById("output-cityName").innerHTML = text[n - 1];
 
-        // Ahora, puedes usar la variable 'n' dentro de este controlador para mostrar la descripción.
         if (n == 1) {
             document.getElementById("output-cityDescription").innerText = "Sumérgete en la majestuosidad de las Montañas Rocosas en el Parque Nacional Banff, donde la naturaleza alcanza su máxima expresión. Desde los picos nevados hasta los lagos de aguas turquesa, cada rincón de este parque te dejará sin aliento. El icónico Lago Louise, rodeado de montañas, es un lugar de ensueño para caminatas y fotografías impresionantes.";
         } else if (n == 2) {
