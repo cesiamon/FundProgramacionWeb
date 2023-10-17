@@ -62,11 +62,11 @@ function calcular(){
             document.getElementById("imagen").src = imagen;
     }
 
-    if (selectedType ===  null || selectedStorage === null ) {
+    if (selectedType ===  null || selectedStorage === null || selectedColor === null ) {
         swal.fire({
             icon: "info",
             title: "Atención",
-            html: 'Por favor seleccione todas las opciones'
+            html: 'Por favor seleccione el color, tipo y almacenamiento.'
         })
     } else {
         const montosInfo = document.querySelector(".montosInfo");
