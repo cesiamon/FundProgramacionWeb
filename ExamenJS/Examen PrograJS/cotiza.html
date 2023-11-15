@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <title>Cotiza</title>
+</head>
+
+<body>
+    <style>
+          body {
+            background-color: #f8f9fa;
+        }
+
+        .container1 {
+            background-color: #ffffff;
+            border: 1px solid #ced4da;
+            border-radius: 5px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .row1 {
+            border-bottom: 1px solid #ced4da;
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+        }
+
+        h51 {
+            margin-bottom: 10px;
+        }
+
+        p1 {
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        button {
+            margin-top: 10px;
+        }
+    </style>
+
+<section class="container mb-5">
+
+    <!-- dropdowns -->
+    <div class="container mt-5">
+        <div class="row">
+            <!-- Primera columna -->
+            <div class="col-md-6">
+                <h3>Escoge el seguro</h3>
+                <select id="seguroSelect" class="form-control" onchange="mostaryAgregarInfo(this)">
+                    <option id="medismart" value="Medismart" >Medismart</option>
+                    <option id="pali" value="Pali">Pali</option>
+                    <option id="ins" value="INS">INS</option>
+                    <option id="sinSeguro" value="Ninguno" >No cuento con seguro</option>
+                </select>
+
+                <div class="container mt-4">
+                    <p id="seguroInfo"></p>
+                </div>
+            </div>
+    
+            <!-- Segunda columna -->
+            <div class="col-md-6">
+                <h3>Tipo de paciente</h3>
+                <select class="form-control" onchange="mostaryAgregarInfoPaciente(this)">
+                    <option value="nuevo">Nuevo</option>
+                    <option value="regular">Regular</option>
+                </select>
+
+                <div class="container mt-4">
+                    <p id="pacienteInfo"></p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    
+    <!-- Listas -->
+<div class="container mt-5">
+    <!-- Primer row -->
+    <div class="row mb-4">
+        <!-- Primera columna -->
+        <div class="col-md-4">
+            <h3>Preventivo</h3>
+            <ul class="list-group">
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Producto 1 - $10
+                    <a href="#" class="btn btn-primary">+</a>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Producto 2 - $15
+                    <a href="#" class="btn btn-primary">+</a>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Producto 3 - $20
+                    <a href="#" class="btn btn-primary">+</a>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Producto 4 - $25
+                    <a href="#" class="btn btn-primary">+</a>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Producto 5 - $30
+                    <a href="#" class="btn btn-primary">+</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Segunda columna -->
+        <div class="col-md-4">
+            <h3>Cosmetico</h3>
+            <ul class="list-group">
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Producto 1 - $12
+                    <a href="#" class="btn btn-primary">+</a>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Producto 2 - $18
+                    <a href="#" class="btn btn-primary">+</a>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Producto 3 - $24
+                    <a href="#" class="btn btn-primary">+</a>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Producto 4 - $30
+                    <a href="#" class="btn btn-primary">+</a>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Producto 5 - $36
+                    <a href="#" class="btn btn-primary">+</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Tercera columna -->
+        <div class="col-md-4">
+            <h3>Preventivo</h3>
+            <ul class="list-group">
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Producto 1 - $10
+                    <a href="#" class="btn btn-primary">+</a>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Producto 2 - $15
+                    <a href="#" class="btn btn-primary">+</a>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Producto 3 - $20
+                    <a href="#" class="btn btn-primary">+</a>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Producto 4 - $25
+                    <a href="#" class="btn btn-primary">+</a>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Producto 5 - $30
+                    <a href="#" class="btn btn-primary">+</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- Productos agregados -->
+<div class="container mt-5">
+    <!-- ... (código anterior) ... -->
+
+    <!-- Sexto row para mostrar productos agregados -->
+    <div class="row">
+        <div class="col-md-12">
+            <h1>Productos Agregados</h1>
+            <ul id="listaProductos" class="list-group"></ul>
+        </div>
+    </div>
+</div>
+
+    <!-- Calculadora -->
+    <div class="container container1 mt-5">
+        <!-- ... (código anterior) ... -->
+    
+        <!-- Primer row -->
+        <div class="row row1 mb-4">
+            <!-- Primera columna -->
+            <div class="col-md-6">
+                <h5 class="h51">Subtotal</h5>
+            </div>
+            <!-- Segunda columna -->
+            <div class="col-md-6">
+                <p class="p1" id="subtotal">0</p>
+            </div>
+        </div>
+    
+        <!-- Segundo row -->
+        <div class="row1 row mb-4">
+            <div class="col-md-6">
+                <h5 class="h51">Descuento paciente</h5>
+            </div>
+            <div class="col-md-6">
+                <p class="p1" id="descuentoPaciente">0</p>
+            </div>
+        </div>
+    
+        <!-- Tercer row -->
+        <div class="row row1 mb-4">
+            <div class="col-md-6">
+                <h5 class="h51">Descuento seguro</h5>
+            </div>
+            <div class="col-md-6">
+                <p class="p1" id="descuentoSeguro">0</p>
+            </div>
+        </div>
+    
+        <!-- Cuarto row -->
+        <div class="row row1 mb-4">
+            <div class="col-md-6">
+                <h5>IVA 15%</h5>
+            </div>
+            <div class="col-md-6">
+                <p id="iva">0</p>
+            </div>
+        </div>
+    
+        <!-- Quinto row -->
+        <div class="row row1 mb-4">
+            <div class="col-md-6">
+                <h5>Total a pagar</h5>
+            </div>
+            <div class="col-md-6">
+                <p id="totalPagar">0</p>
+            </div>
+        </div>
+    
+        <!-- Botón Calcular -->
+        <div class="row">
+            <div class="col-md-12">
+                <button class="btn btn-primary" onclick="calcularTotal()">Calcular Total</button>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<!-- <footer>
+    <div class="container">
+        <div class="row">
+
+        <div class="col-6">
+        <div class="footer-logo" style="margin-top:45px;">
+            <a href="#">D E N T A L C A R E</a>
+        </div>
+        
+        </div>
+        
+        <div class="col-6">
+            <ul class="social-links">
+                <li><a href="#" target="_blank"><i class="fab fa-facebook"></i> Facebook</a></li>
+                <li><a href="#" target="_blank"><i class="fab fa-twitter"></i> Twitter</a></li>
+                <li><a href="#" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                <li><a href="#" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
+            </ul>
+        <div class="contact-info">
+            <p>Dirección: San Pedro, Montes de Oca, 300 metros sur del parque Central.</p>
+            <p>Teléfono: +123 456 789</p>
+            <p>Correo Electrónico: <a href="mailto:info@empresa.com">info@dentalcare.com</a></p>
+        </div>
+        </div>
+
+        </div>
+    </div>
+</footer> -->
+
+<!-- <script src="js/main.js"></script> -->
+<script src="js/ejemplo.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!-- <link rel="stylesheet" href="js/ejemplo.js"> -->
+<script src="js/ejemplo.js"></script>
+
+<div>
+  <button id="Escazu" onclick="verificarSede('Escazu'); openMap('https://www.google.com/maps/embed?pb=%211m26%211m12%211m3%211d62881.57629335251%212d-84.08766018832796%213d9.925752784900489%212m3%211f0%212f0%213f0%213m2%211i1024%212i768%214f13.1%214m11%213e6%214m3%213m2%211d9.9269496%212d-84.0273158%214m5%211s0x8fa0e3f13462cc7b%3A0x97219232a6ee2da8%212scenfotec%20san%20pedro%20maps%213m2%211d9.9313846%212d-84.0641474%215e0%213m2%211sen%212scr')">Escazu</button>
+  <button id="SanPedro" onclick="verificarSede('San Pedro'); openMap('https://www.google.com/maps/embed?pb=%211m18%211m12%211m3%211d3930.0308996927915%212d-84.06672232327267%213d9.931384590170499%212m3%211f0%212f0%213f0%213m2%211i1024%212i768%214f13.1%213m3%211m2%211s0x8fa0e3f13462cc7b%3A0x97219232a6ee2da8%212sCenfotec%215e0%213m2%211sen%212scr%214v1699909565628%215m2%211sen%212scr')">San Pedro</button>
+  <button id="Heredia" onclick="verificarSede('Heredia'); openMap('https://www.google.com/maps/embed?pb=%211m18%211m12%211m3%211d982.5698098005569%212d-84.06853453032724%213d9.910685399386887%212m3%211f0%212f0%213f0%213m2%211i1024%212i768%214f13.1%213m3%211m2%211s0x8fa0e30e76ba452f%3A0x2e66cf32e4ccc50f%212sSanta%20Marta%2C%20San%20Jos%C3%A9%20Province%2C%20San%20Jos%C3%A9%215e0%213m2%211sen%212scr%214v1699909723898%215m2%211sen%212scr')">Heredia</button>
+</div>
+
+<div class="container" id="SedeInfo">
+  <h1 id="SedeName"></h1>
+  <p>¡Estamos para servirte!</p>
+  <P ID="SedeTelefono"></P>
+  <p id="SedeCorreo"></p>
+  <p>Nuestro Horario de Atencion: <br> De Lunes a Sabado de 9 AM a 6 PM.</p>
+</div>
+
+<div id="map-container">
+  <iframe id="map" width="100%" height="100%" style="border: none;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+
+<style>
+  /* Ajusta el estilo según sea necesario */
+  #map-container {
+      width: 100%;
+      height: 400px;
+  }
+</style>

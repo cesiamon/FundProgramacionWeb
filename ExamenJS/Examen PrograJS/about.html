@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- <link rel="stylesheet" href="js/main.js"> -->
+    <!-- <link rel="stylesheet" href="css/tira1.css"> -->
+    <!-- <link rel="stylesheet" href="css/splide.min.css"> -->
+    <!-- <link rel="stylesheet" href="css/testimonials.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-ZyZXEAg3QhqLMpG8r+5A/kd1waMI9q9M/GWjrruzaU6Pp+w5cjX6J0TmCOlE3FFdB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fslightbox@2.8.3/dist/fslightbox.min.css">
+
+
+    <!-- testimonial hojas de estilo  -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous"
+    referrerpolicy="no-referrer" /> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <title>Sobre Nosotros</title>
+</head>
+<style>
+    /* Estilos modernos para los divs */
+    .card {
+        /* background-color: #6aa29e; Fondo de la tarjeta en #4f6e71 */
+        border: none;
+        border-radius: 10px; /* Bordes redondeados */
+        box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    }
+
+    .card .card-body {
+        padding: 20px;
+        background-color: #f8f5f1;
+    }
+
+    .card .number {
+        font-size: 2rem;
+        color: #b4c6c8; /* Color de los números en #b4c6c8 */
+    }
+
+    .card .card-title {
+        color: #20817b; /* Color del título de la tarjeta en #2a484b */
+        font-size: 1.5rem; /* Tamaño del título */
+        margin-top: 10px;
+    }
+
+    .card p{
+        color: #1c3735;
+    }
+
+    .card a{
+        background-color: #009e92;
+    }
+
+    header {
+    background-color: aqua;
+    position: relative;
+    height: 500px;
+    background: url('./img/backgroundAbout2.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    /* overflow: hidden; */
+
+}
+.btnContact {
+      background-color: rgb(56, 226, 198);
+      border-radius: 15px;
+      font-weight: bold;
+      color: #fff;
+      padding: 5px 10px;
+      /* margin: 10px; */
+      cursor: pointer;
+      position: absolute;
+      bottom: 20%;
+      left: 50%;
+      border: none;
+
+      transform: translate(-50%, 50%);
+    }
+
+    header button:hover {
+      background-color: rgba(33, 166, 155, 0.643);
+    }
+
+</style>
+
+<body>
+<header>
+    
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: transparent;">
+            <div class="container" style="height: 125px; margin-top: 25px;">
+                <a class="navbar-brand" href="#">
+                    <img src="img/LogoBlanco.png" id="logo" alt="">
+                </a>
+            
+    
+                <div class="collapse navbar-collapse" id="navbarNav" style="margin-left:500px; margin-bottom: 100px;">
+                    <ul class="navbar-nav ml-auto" >
+                
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" style="color: #e8efef;">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" style="color: #e8efef;">Sobre Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" style="color: #e8efef;">Para Pacientes</a>
+                        </li>
+                    </ul>
+    
+                    <div class="navButtons">
+                        <button>
+                            Cotiza Precios
+                        </button>
+            
+                        <button>
+                            Agenda tu cita
+                        </button>
+                    </div>
+                </div>
+            </div>
+    
+    
+        </nav>
+    
+            <button class="btnContact">
+                Contactanos
+            </button>
+
+</header>
+    
+
+<!-- video section -->
+<section class="AboutUS1Div text-center"> 
+    <h2>SIRVIENDO A NUESTRA PROPIA COMUNIDAD</h2>
+    <h1>LO QUE NOS HACE ÚNICOS</h1>
+    
+
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col">
+                <p><i class="fas fa-check"></i> Control Centralizado</p>
+            </div>
+        
+            <div class="col">
+                <p><i class="fas fa-check"></i> La última y mejor tecnología</p>
+            </div>
+        
+            <div class="col">
+                <p><i class="fas fa-check"></i> Libertad para atender las necesidades individuales de nuestros pacientes.</p>
+            </div>
+        
+            <div class="col">
+                <p><i class="fas fa-check"></i> Sin restricciones corporativas en la atención al paciente</p>
+            </div>
+        </div>
+
+        <div class="row AboutUS1DivVideo ">
+            <a href="https://www.youtube.com/embed/lw7xIB0kPCo" target="_blank">
+                <video autoplay muted loop playsinline controls poster="https://i.ytimg.com/vi/lw7xIB0kPCo/maxresdefault.jpg" style="height: 500px; width: 800px;">
+                    <source src="img/dentist.mp4" type="video/mp4">
+                </video>
+            </a>
+        </div>
+        
+    </div>
+</section>
+
+<!-- nuestros integrantes -->
+<section class="integranteDiv text-center mt-5">
+    <h2 >CONOCE A NUESTROS ESPECIALISTAS</h2>
+    <h1 >TODO UN EQUIPO SOLO PARA VOS</h1>
+
+    <div class="container mt-4">
+        <div class="row">
+
+            <div class="col-md-3 integrante-col ">
+                <img src="img/doctora2.jpg" alt="" class="imagen-rectangular">
+                <p class="p1">CAMILLA. TODD SMITH</p>
+                <p class="p2">Odontología General</p>
+                <p class="p3">Preventivo</p>
+                <button>Ver Más</button>
+            </div>
+
+            <div class="col-md-3 integrante-col">
+                <img src="img/doctor4.jpeg" alt="" class="imagen-rectangular">
+                <p class="p1">DR. DOUGLAS CAMPBELL</p>
+                <p class="p2">Ortodoncista</p>
+                <p class="p3">Cosmético</p>
+                <button>Ver Más</button>
+            </div>
+
+            <div class="col-md-3 integrante-col">
+                <img src="img/doctor5.jpeg" alt="" class="imagen-rectangular">
+                <p class="p1">DR. NOLAN BELLISARIO</p>
+                <p class="p2">Cirugía Oral y Maxilofacial</p>
+                <p class="p3">Cosmético</p>
+                <button>Ver Más</button>
+            </div>
+
+            <div class="col-md-3 integrante-col">
+                <img src="img/dcotora3.jpg" alt="" class="imagen-rectangular">
+                <p class="p1">DR. MEGAN LEE</p>
+                <p class="p2">Periodoncia</p>
+                <p class="p3">Preventivo</p>
+                <button>Ver Más</button>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- pallarax -->
+<!-- <section class=" parallaxSection container-fluid text-center parallax-window" data-parallax="scroll" data-image-src="img/seguroMedico.jpeg">
+
+<DIV class="parallaxInfoDiv">
+    <h3>¿Cuentas con seguro médico?</h3>
+    <h1>En nuestra clínica, mantenemos alianzas con prestigiosas aseguradoras nacionales.</h1>
+    <button>Descubre más</button>
+</DIV>
+
+</section> -->
+
+<!-- especialidades -->
+
+
+<section style="background-color: #f8f5f1; padding: 40px 0;" class="">
+    <div class="container text-center" id="nuestrosServicios">
+        <h2 class="text-center mb-5"> SERVICIOS</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card" style="border: none;">
+                    <img src="https://img.freepik.com/foto-gratis/cerrar-paciente-sonriente-cita_23-2149164306.jpg?w=1380&t=st=1699503180~exp=1699503780~hmac=dfdba5a99b93378173ea996dd00a3e95a2769a23739f582fb941adfdfcc9d22e" alt="Servicio General" class="card-img-top">
+                    <div class="card-body text-center"> <!-- Agregado text-center -->
+                        <h5 class="card-title">GENERAL</h5>
+                        <a href="#" class="btn btn-success btn-block">Ver más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" style="border: none;">
+                    <img src="https://img.freepik.com/foto-gratis/mujer-que-usa-aparatos-ortodoncicos-invisibles-silicona_107420-74181.jpg?w=1380&t=st=1699503688~exp=1699504288~hmac=d90e7d484c2fe428c50102403c105da9cdb6d33a544ca14ded135985e0587c68" alt="Servicio Cosmético" class="card-img-top">
+                    <div class="card-body text-center"> <!-- Agregado text-center -->
+                        <h5 class="card-title">COSMETICO</h5>
+                        <a href="#" class="btn btn-success btn-block">Ver más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" style="border: none;">
+                    <img src="https://img.freepik.com/foto-gratis/foto-dentista-sonriente-pie-brazos-cruzados-su-colega-mostrando-signo-bien_496169-1043.jpg?w=1380&t=st=1699503729~exp=1699504329~hmac=5e7d135295b579d9a53274c0d8664f706cbef12dbcd981f38843c6106a025226" alt="Servicio Preventivo" class="card-img-top">
+                    <div class="card-body text-center"> <!-- Agregado text-center -->
+                        <h5 class="card-title">PREVENTIVO</h5>
+                        <a href="#" class="btn btn-success btn-block">Ver más</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- pestanas -->
+<section class="container tapsSection">
+
+<div class="row">
+
+<div class="col-6" >
+    <div style="background-color:#009e91fb;">
+    <button class="tap" id="Escazu" onclick="verificarSede('Escazu'); openMap('https://www.google.com/maps/embed?pb=%211m26%211m12%211m3%211d62881.57629335251%212d-84.08766018832796%213d9.925752784900489%212m3%211f0%212f0%213f0%213m2%211i1024%212i768%214f13.1%214m11%213e6%214m3%213m2%211d9.9269496%212d-84.0273158%214m5%211s0x8fa0e3f13462cc7b%3A0x97219232a6ee2da8%212scenfotec%20san%20pedro%20maps%213m2%211d9.9313846%212d-84.0641474%215e0%213m2%211sen%212scr')">Escazu</button>
+    <button class="tap" id="SanPedro" onclick="verificarSede('SanPedro'); openMap('https://www.google.com/maps/embed?pb=%211m18%211m12%211m3%211d3930.0308996927915%212d-84.06672232327267%213d9.931384590170499%212m3%211f0%212f0%213f0%213m2%211i1024%212i768%214f13.1%213m3%211m2%211s0x8fa0e3f13462cc7b%3A0x97219232a6ee2da8%212sCenfotec%215e0%213m2%211sen%212scr%214v1699909565628%215m2%211sen%212scr')">San Pedro</button>
+    <button class="tap" id="Heredia" onclick="verificarSede('Heredia'); openMap('https://www.google.com/maps/embed?pb=%211m18%211m12%211m3%211d982.5698098005569%212d-84.06853453032724%213d9.910685399386887%212m3%211f0%212f0%213f0%213m2%211i1024%212i768%214f13.1%213m3%211m2%211s0x8fa0e30e76ba452f%3A0x2e66cf32e4ccc50f%212sSanta%20Marta%2C%20San%20Jos%C3%A9%20Province%2C%20San%20Jos%C3%A9%215e0%213m2%211sen%212scr%214v1699909723898%215m2%211sen%212scr')">Heredia</button>
+    </div>
+
+    <div class="container" id="SedeInfo">
+        <h3 class="pTaps">¡Estamos para servirte!</h3>
+        <p class="pTaps">Nuestro Horario de Atencion: De Lunes a Sabado de 9 AM a 6 PM.</p>
+        <p>Seleciona la sede de tu preferencia:</p>
+        <h1 id="SedeName"></h1>
+    <P ID="SedeTelefono"></P>
+    <p id="SedeCorreo"></p>
+    </div>
+</div>
+
+<div class="col-6">
+    <div id="map-container">
+    <iframe id="map" width="100%" height="100%" style="border: none;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</div>
+
+</div>
+<style>
+    /* Ajusta el estilo según sea necesario */
+    #map-container {
+        width: 100%;
+        height: 330px;
+    }
+</style>
+</section>
+
+
+<footer>
+        <div class="container">
+            <div class="row">
+    
+            <div class="col-6">
+            <div class="footer-logo" style="margin-top:45px;">
+                <a href="#">D E N T A L C A R E</a>
+            </div>
+            
+            </div>
+            
+            <div class="col-6">
+                <ul class="social-links">
+                    <li><a href="#" target="_blank"><i class="fab fa-facebook"></i> Facebook</a></li>
+                    <li><a href="#" target="_blank"><i class="fab fa-twitter"></i> Twitter</a></li>
+                    <li><a href="#" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                    <li><a href="#" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
+                </ul>
+            <div class="contact-info">
+                <p>Dirección: San Pedro, Montes de Oca, 300 metros sur del parque Central.</p>
+                <p>Teléfono: +123 456 789</p>
+                <p>Correo Electrónico: <a href="mailto:info@empresa.com">info@dentalcare.com</a></p>
+            </div>
+            </div>
+    
+            </div>
+        </div>
+</footer>
+
+<!-- !-- jQuery y Popper.js --> 
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script src="js/main.js"></script>
+
+<script src="js/fslightbox.js"></script>
+<script src="js/jquery-migrate-3.0.1.min.js"></script>
+<script src="js/jquery.waypoints.min.js"></script>
+<script src="js/jquery.stellar.min.js"></script>
+<script src="js/jquery.animateNumber.min.js"></script>
+<script src="js/bootstrap-datepicker.js"></script>
+<script src="js/jquery.timepicker.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/scrollax.min.js"></script>
+<script src="js/main.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/fslightbox@2.8.3/dist/fslightbox.min.js"></script>
+
+<!-- parallax -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="js/parallax.min.js"></script>
+</body>
+</html>
+
+

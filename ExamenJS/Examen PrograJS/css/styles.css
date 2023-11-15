@@ -1,0 +1,524 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;700&display=swap');
+
+
+.navbar-dark .navbar-nav .nav-link {
+    color: black; /* Cambia el color del texto a negro */
+}
+
+/* .video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 500px;
+    z-index: 9999; 
+} */
+/* Estilos para el video */
+/* .video-container video {
+    width: 100%;
+    height: 100%;
+    height: 500px;
+} */
+
+header {
+    background-color: aqua;
+    position: relative;
+    height: 500px;
+    background: url('img/videoDent.mp4') no-repeat center center fixed;
+    background-size: cover;
+    /* overflow: hidden; */
+    background: #a19a9a7d; /* Gris opaco */
+
+}
+
+#logo {
+    height: 70px;
+    width: 60px;
+    margin-bottom: 90px;
+    margin-right: 100px;
+}
+
+#background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 500px;
+    /* min-height: ;  */
+    object-fit: cover; 
+    z-index: -1; 
+}
+
+.navbar {
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    font-family: 'Assistant', sans-serif;
+    
+}
+.container { 
+    position: relative;
+    z-index: 1;
+}
+
+.introDiv{
+    color: #f5e7e7;
+    margin-bottom: 140px;
+    /* background-color: red; */
+
+}
+
+.introDiv h1{
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Agrega una sombra a las letras */
+    color: #47b0a1;
+    font-size: 42px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.introDiv h2{
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Agrega una sombra a las letras */
+    font-size: 24px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    
+}
+
+.introDiv h3{
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Agrega una sombra a las letras */
+
+    font-size: 14px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 100;
+}
+
+#section-counter {
+    background-color: #deebed; /* Fondo en color #deebed */
+    padding: 40px 0;
+}
+
+.number {
+    font-size: 2rem;
+}
+
+.cardCuadrado {
+    background-color: #6aa29e; 
+    border: none;
+}
+
+
+.splide__slide img{
+    object-fit: cover; 
+    max-height: 400px; 
+    max-width: 100%;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0;
+}
+
+
+
+.footer-logo {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.footer-logo a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.social-links li {
+    font-size: 20px;
+}
+
+.social-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.contact-info {
+    flex: 1;
+}
+
+.contact-info p {
+    margin: 0;
+    line-height: 1.6;
+}
+
+.contact-info a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* tira fotografica */
+.owl-carousel .item {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.owl-carousel img {
+    border-radius: 50%;
+    max-width: 150px;
+    margin: 0 auto;
+    display: block;
+}
+.owl-carousel h4 {
+    font-size: 24px;
+    margin-top: 15px;
+    color: #333;
+}
+
+.owl-carousel h4::after {
+    content: '';
+    display:block;
+    width: 50px;
+    height: 4px;
+    background-color: #009E92; /* Color verde */
+    /* position: absolute; */
+    /* bottom: 0; */
+    right: 50%;
+    transform: translateX(280%);
+    margin-top: 10px;
+}
+
+#section-counter h2::after{
+    content: '';
+    display:block;
+    width: 110px;
+    height: 4px;
+    background-color: #009E92; /* Color verde */
+    /* position: absolute; */
+    /* bottom: 0; */
+    right: 50%;
+    transform: translateX(540%);
+    margin-top: 10px;
+}
+
+#nuestrosServicios h2::after{
+    content: '';
+    display:block;
+    width: 110px;
+    height: 4px;
+    background-color: #009E92; /* Color verde */
+    /* position: absolute; */
+    /* bottom: 0; */
+    right: 50%;
+    transform: translateX(540%);
+    margin-top: 10px;
+
+}
+
+#tec h2::after{
+    content: '';
+    display:block;
+    width: 110px;
+    height: 4px;
+    background-color: #009E92; /* Color verde */
+    /* position: absolute; */
+    /* bottom: 0; */
+    right: 50%;
+    transform: translateX(540%);
+    margin-top: 10px;
+
+}
+
+.owl-carousel p {
+    font-size: 16px;
+    color: #666;
+}
+
+.navButtons button {
+    background-color: transparent;
+    border: 2px solid #ebf1f1; /* Borde verde */
+    color: #ebf1f1; /* Color de letras verde */
+    /* padding: 10px 20px; */
+    font-size: 15px;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 5px;
+    /* margin-right: 10px; */
+}
+
+.introDiv button{
+    background-color: transparent;
+    border: 2px solid #f8f5f1; /* Borde verde */
+    color: #f8f5f1; /* Color de letras verde */
+    /* padding: 10px 20px; */
+    font-size: 15px;
+    font-weight: bolder;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 5px;
+}
+
+.navButtons button:hover {
+    background-color: #4caf9b; 
+    color: #fff; 
+    border-color: #4caf9b;
+}
+
+.introDiv button:hover{
+    background-color: #47a391; 
+    color: #fff; 
+    border-color: #47a391;
+}
+
+.testimonials-clean {
+    background-color: #f8f5f1;
+    padding: 40px 0;
+    text-align: center;
+    
+}
+
+.testimonials-clean .intro h2 {
+    color: #009e92;
+    font-size: 30px;
+}
+
+.testimonials-clean .intro p {
+    color: #437081;
+    font-size: 18px;
+}
+
+/* Estilos de los elementos del carrusel */
+.testimonials-clean .box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 0 15px;
+    text-align: center;
+}
+
+.testimonials-clean .description {
+    font-size: 18px;
+    color: #333;
+}
+
+.testimonials-clean .author img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+}
+
+.testimonials-clean .name {
+    font-size: 20px;
+    color: #009e92;
+}
+
+.testimonials-clean .title {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Estilos del carrusel Owl Carousel */
+.testimonials-clean .owl-carousel {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 10px 0;
+    
+}
+
+.testimonials-clean .owl-carousel .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    flex: 0 0 auto;
+    height: 300px;
+}
+
+/* about us */ 
+
+.AboutUS1Div{
+    /* background-color: #47b0a053; */
+    padding-top: 30px;
+
+    
+}
+
+.AboutUS1Div h2{
+    margin-top: 40px;
+    font-size: 16px;
+}
+
+.AboutUS1Div h1{
+    /* margin-top: 40px; */
+    font-size: 35px;
+    position: relative;
+    display: inline-block;
+    
+}
+
+.AboutUS1Div h1::after{
+    content: "";
+    position: absolute;
+    bottom: -5px; /* Ajusta el valor según sea necesario */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px; /* Ancho de la línea */
+    height: 4px; /* Grosor de la línea */
+    background-color: rgb(23, 177, 154); /* Color de la línea */
+  }
+
+.AboutUS1Div i p{
+    font-size: 16px;
+}
+
+.imagen-redonda {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    object-fit: cover; /* Controla cómo la imagen se ajusta al contenedor */
+}
+
+/* Estilos generales para la información */
+.tapsSection{
+ padding-top: 50px ;
+ padding-bottom: 50px;
+}
+
+#SedeInfo {
+    background-color: #009e91c1; /* Color de fondo */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 0px 0px 10px 10px;
+}
+
+#SedeName {
+    color: #fff; /* Color del texto */
+    font-size: 24px; /* Tamaño de fuente */
+}
+
+#SedeTelefono,
+#SedeCorreo {
+    color: #fff; /* Color del texto */
+}
+
+/* Estilos para los botones */
+.tap {
+    border: none;
+    box-shadow: none;
+    background-color: #009e91fb; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    padding: 10px 20px; /* Espaciado interno */
+    margin: 5px; /* Margen entre botones */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
+
+.tap:hover {
+    background-color: #008a80; /* Cambio de color al pasar el mouse */
+}
+
+
+
+/* integrantes */
+
+
+    .integrante-col {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .imagen-rectangular {
+        width: 200px; /* Ancho deseado */
+        height: 400px; /* Alto deseado */
+        object-fit: cover; 
+        border-radius: 10px; /* Bordes redondeados, ajusta según sea necesario */
+        box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    }
+
+    .integrante-col p {
+        margin: 10px 0;
+        color: #f1e8e1;
+    }
+
+    .p1{
+        font-weight: bold;
+    }
+    .p2{
+        font-weight:300;
+        font-style: italic;
+    }
+
+    .integrante-col button {
+        background-color: #009e91fb;
+        color: #fff;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    .integrante-col button:hover {
+        background-color: #007a72;
+    }
+    .integranteDiv {
+        text-align: center;
+        margin-top: 50px;
+        padding: 20px;
+        background-color: #009e917d; /* Color de fondo principal */
+        color: #F3EFEC;
+        border-radius: 15px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    }
+
+    .integranteDiv h2, .integranteDiv h1 {
+        text-align: center;
+        width: 700px;
+        margin: 10px 0;
+        border-radius: 8px;
+        color: #F3EFEC;
+    }
+
+    .integranteDiv h2 {
+        background-color: #009e91a7; /* Fondo para h2 */
+        margin-left: 500px;
+    }
+
+    .integranteDiv h1 {
+        background-color: #009e9171; /* Fondo para h1 */
+        margin-left: 500px;
+    }
+
+    /* seguro medico */
+    .parallaxSection{
+            color: aliceblue;
+        
+    }
+
+    .parallax-window {
+        min-height: 500px;
+        background-color: rgba(0, 0, 0, 0.211); 
+ }
+ .parallaxInfoDiv{
+    
+ }
+
+
