@@ -59,10 +59,20 @@
     background-color: aqua;
     position: relative;
     height: 500px;
-    background: url('./img/backgroundAbout2.jpeg') no-repeat center center fixed;
+    background: url('./img/tools.jpeg') no-repeat center center fixed;
     background-size: cover;
     /* overflow: hidden; */
 
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:  #edd4b367; /* #a19a9a7d Puedes ajustar el valor alpha para controlar la opacidad */
 }
 .btnContact {
       background-color: rgb(56, 226, 198);

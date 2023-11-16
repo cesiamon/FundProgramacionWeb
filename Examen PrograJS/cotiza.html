@@ -41,10 +41,72 @@
         button {
             margin-top: 10px;
         }
+
+    header {
+    background-color: aqua;
+    position: relative;
+    height: 500px;
+    background: url('./img/tools.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    /* overflow: hidden; */
+
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:  #edd4b367; /* #a19a9a7d Puedes ajustar el valor alpha para controlar la opacidad */
+}
     </style>
 
-<section class="container mb-5">
+<header>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: transparent;">
+        <div class="container" style="height: 125px; margin-top: 25px;">
+            <a class="navbar-brand" href="#">
+                <img src="img/LogoBlanco.png" id="logo" alt="">
+            </a>
+        
 
+            <div class="collapse navbar-collapse" id="navbarNav" style="margin-left:500px; margin-bottom: 100px;">
+                <ul class="navbar-nav ml-auto" >
+            
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="color: #e8efef;">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="color: #e8efef;">Sobre Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="color: #e8efef;">Para Pacientes</a>
+                    </li>
+                </ul>
+
+                <div class="navButtons">
+                    <button >
+                        Cotiza Precios
+                    </button>
+        
+                    <button>
+                        Agenda tu cita
+                    </button>
+                </div>
+            </div>
+        </div>
+
+
+    </nav>
+
+
+
+</header>
+
+<section class="container mb-5">
+    <h1 class="text-center mt-4" id="cotizaSercivios">Cotiza Nuestros Servicios</h1>
     <!-- dropdowns -->
     <div class="container mt-5">
         <div class="row">
@@ -52,6 +114,7 @@
             <div class="col-md-6">
                 <h3>Escoge el seguro</h3>
                 <select id="seguroSelect" class="form-control" onchange="mostaryAgregarInfo(this)">
+                    <option disabled selected value="">Selecciona un seguro</option>
                     <option id="medismart" value="Medismart" >Medismart</option>
                     <option id="pali" value="Pali">Pali</option>
                     <option id="ins" value="INS">INS</option>
@@ -66,7 +129,8 @@
             <!-- Segunda columna -->
             <div class="col-md-6">
                 <h3>Tipo de paciente</h3>
-                <select class="form-control" onchange="mostaryAgregarInfoPaciente(this)">
+                <select id="tipoPacienteSelect" class="form-control" onchange="mostaryAgregarInfoPaciente(this)">
+                    <option disabled selected value="">Selecciona una opción</option>
                     <option value="nuevo">Nuevo</option>
                     <option value="regular">Regular</option>
                 </select>
@@ -89,23 +153,23 @@
             <h3>Preventivo</h3>
             <ul class="list-group">
                 <li  class="list-group-item d-flex justify-content-between align-items-center">
-                    Producto 1 - $10 
+                    Limpieza Dental - $60 
                         <button href="#" type="button" class="btn btn-primary">+</button>
                 </li>
                 <li class="list-group-item d-flex justify-content-between align-items-center">
-                    Producto 2 - $15
+                    Selladores Dentales - $50
                     <a href="#" class="btn btn-primary">+</a>
                 </li>
                 <li class="list-group-item d-flex justify-content-between align-items-center">
-                    Producto 3 - $20
+                    Fluorización - $100
                     <a href="#" class="btn btn-primary">+</a>
                 </li>
                 <li class="list-group-item d-flex justify-content-between align-items-center">
-                    Producto 4 - $25
+                    Exámenes Dentales - $200
                     <a href="#" class="btn btn-primary">+</a>
                 </li>
                 <li class="list-group-item d-flex justify-content-between align-items-center">
-                    Producto 5 - $30
+                    Radiografías Dentales - $200
                     <a href="#" class="btn btn-primary">+</a>
                 </li>
             </ul>
@@ -113,26 +177,26 @@
 
         <!-- Segunda columna -->
         <div class="col-md-4">
-            <h3>Cosmetico</h3>
+            <h3>General</h3>
             <ul class="list-group">
                 <li class="list-group-item d-flex justify-content-between align-items-center">
-                    Producto 1 - $12
+                    Extracciones Dentales - $100
                     <a href="#" class="btn btn-primary">+</a>
                 </li>
                 <li class="list-group-item d-flex justify-content-between align-items-center">
-                    Producto 2 - $18
+                    Empastes Dentales - $80
                     <a href="#" class="btn btn-primary">+</a>
                 </li>
                 <li class="list-group-item d-flex justify-content-between align-items-center">
-                    Producto 3 - $24
+                    Tratamiento de Conducto: - $250
                     <a href="#" class="btn btn-primary">+</a>
                 </li>
                 <li class="list-group-item d-flex justify-content-between align-items-center">
-                    Producto 4 - $30
+                    Procedimientos de Restauración Dental - $500
                     <a href="#" class="btn btn-primary">+</a>
                 </li>
                 <li class="list-group-item d-flex justify-content-between align-items-center">
-                    Producto 5 - $36
+                    Tratamiento Sensi Dent - $360
                     <a href="#" class="btn btn-primary">+</a>
                 </li>
             </ul>
@@ -140,26 +204,26 @@
 
         <!-- Tercera columna -->
         <div class="col-md-4">
-            <h3>Preventivo</h3>
+            <h3>Cosméticos</h3>
             <ul class="list-group">
                 <li class="list-group-item d-flex justify-content-between align-items-center">
-                    Producto 1 - $10
+                    Blanqueamiento Dental Profesional - $200
                     <a href="#" class="btn btn-primary">+</a>
                 </li>
                 <li class="list-group-item d-flex justify-content-between align-items-center">
-                    Producto 2 - $15
+                    Carillas Dentales Estéticas - $300
                     <a href="#" class="btn btn-primary">+</a>
                 </li>
                 <li class="list-group-item d-flex justify-content-between align-items-center">
-                    Producto 3 - $20
+                    Implantes Dentales Estético - $200
                     <a href="#" class="btn btn-primary">+</a>
                 </li>
                 <li class="list-group-item d-flex justify-content-between align-items-center">
-                    Producto 4 - $25
+                    Rejuvenecimiento de Encías - $250
                     <a href="#" class="btn btn-primary">+</a>
                 </li>
                 <li class="list-group-item d-flex justify-content-between align-items-center">
-                    Producto 5 - $30
+                    Corrección de la Alínea - $300
                     <a href="#" class="btn btn-primary">+</a>
                 </li>
             </ul>
@@ -239,14 +303,15 @@
         <!-- Botón Calcular -->
         <div class="row">
             <div class="col-md-12">
-                <button class="btn btn-primary" onclick="calcularTotal()">Calcular Total</button>
+                <button class="btn btn-danger" onclick="limpiar()">Limpiar</button>
             </div>
         </div>
     </div>
 
 </section>
 
-<!-- <footer>
+
+<footer>
     <div class="container">
         <div class="row">
 
@@ -273,15 +338,14 @@
 
         </div>
     </div>
-</footer> -->
-
+</footer>
 
 <!-- jquery -->
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 
 
 <!-- <script src="js/main.js"></script> -->
-<script src="js/ejemplo.js"></script>
+<script src="js/cotiza.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -50,6 +50,9 @@ function mostaryAgregarInfoPaciente(selectElement){
 // agregar productos a la lista
 
 function agregarProducto(nombre, precio) {
+
+  event.preventDefault();
+
   var listaProductos = document.getElementById('listaProductos');
 
   // Crear un nuevo elemento de lista
@@ -78,7 +81,7 @@ function agregarProducto(nombre, precio) {
 
   subtotal.innerHTML = `$${totalPrecio.toFixed(2)}`;
 
-  console.log('Total Precio:', totalPrecio.toFixed(2));
+  console.log('Total Precio: $', totalPrecio.toFixed(2));
 
   // Total a pagar 
 
@@ -107,7 +110,7 @@ totalPagar = totalConDescuentos + ivaMonto;
 console.log('total a pagar: ',totalPagar.toFixed(2));
   
 var totalPagarElement = document.getElementById('totalPagar');
-totalPagarElement.innerHTML = totalPagar.toFixed(2);
+totalPagarElement.innerHTML = '$' + totalPagar.toFixed(2);
 
 }
 
@@ -123,4 +126,30 @@ document.addEventListener('click', function (event) {
     agregarProducto(nombreProducto, precioProducto);
   }
 });
+
+// limpiar 
+function limpiar() {
+  // Limpiar información del seguro
+  var seguroSelect = document.getElementById('seguroSelect');
+  seguroSelect.selectedIndex = 0;
+  document.getElementById('seguroInfo').innerText = ' ';
+
+  // Limpiar información del paciente (si existe)
+  var tipoPacienteSelect = document.getElementById('tipoPacienteSelect');
+  if (tipoPacienteSelect) {
+    tipoPacienteSelect.selectedIndex = 0;
+    document.getElementById('pacienteInfo').innerText = '';
+  }
+
+  // Limpiar lista de productos
+  var listaProductos = document.getElementById('listaProductos');
+  listaProductos.innerHTML = '';
+
+  // Limpiar porcentajes y números
+  document.getElementById('subtotal').innerText = '0';
+  document.getElementById('descuentoPaciente').innerText = '0';
+  document.getElementById('descuentoSeguro').innerText = '0';
+  document.getElementById('iva').innerText = '15%';
+  document.getElementById('totalPagar').innerText = '0';
+}
 
