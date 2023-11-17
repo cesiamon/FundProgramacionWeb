@@ -521,4 +521,23 @@ footer {
     
  }
 
+ /* contact */
+ .alertaRoja{
+    color: #ff0000;
+    font-weight: 500;
+    font-size: 18px;
+}
+.alertaVerde{
+    color: #2d572c;
+    font-weight: 500;
+    font-size: 18px;
+}
+.error {
+    border: 1px solid red !important;
+}
+
+#categoria{
+    /* border: 1px solid red !important; */
+
+}
 

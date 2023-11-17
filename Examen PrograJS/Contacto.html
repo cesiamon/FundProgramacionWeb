@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/galeria.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <title>Contacto</title>
+
+    <style>
+body {
+            background-color: #f8f5f18e;
+            color: #009e91f0;
+        }
+        
+.form-group {
+            margin-top: 10px;
+        }
+
+        header {
+        background-color: aqua;
+        position: relative;
+        height: 500px;
+        background: url('./img/tools.jpeg') no-repeat center center fixed;
+        background-size: cover;
+        /* overflow: hidden; */
+        
+        }
+        
+        header::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color:  #edd4b367; /* #a19a9a7d Puedes ajustar el valor alpha para controlar la opacidad */
+        }
+    </style>
+</head>
+<body>
+<header>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: transparent;">
+        <div class="container" style="height: 125px; margin-top: 25px;">
+            <a class="navbar-brand" href="#">
+                <img src="img/LogoBlanco.png" id="logo" alt="">
+            </a>
+        
+
+            <div class="collapse navbar-collapse" id="navbarNav" style="margin-left:500px; margin-bottom: 100px;">
+                <ul class="navbar-nav ml-auto" >
+            
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="color: #e8efef;">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="color: #e8efef;">Sobre Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="color: #e8efef;">Para Pacientes</a>
+                    </li>
+                </ul>
+
+                <div class="navButtons">
+                    <button >
+                        Cotiza Precios
+                    </button>
+        
+                    <button>
+                        Agenda tu cita
+                    </button>
+                </div>
+            </div>
+        </div>
+
+
+    </nav>
+
+
+
+</header>
+
+<section class="contact-section">
+
+    <h1 class="text-center" style="margin-top: 10px">Contáctanos</h1>
+    <div class="container mb-5 d-flex justify-content-center align-items-center">
+    <form style="width: 600px;" id="form1">
+        <div class="form-group">
+            <label for="nombreTxt">Nombre:</label>
+            <input type="text" class="form-control" id="nombreTxt" placeholder="Ingrese su nombre">
+        </div>
+        <div class="form-group">
+            <label for="emailTxt">Correo:</label>
+            <input type="email" class="form-control" id="emailTxt" placeholder="Ingrese su correo">
+        </div>
+        <div class="form-group">
+            <label for="numberTxt">Número:</label>
+            <input type="tel" class="form-control" id="numberTxt" placeholder="Ingrese su número de teléfono">
+        </div>
+        <div class="categoriaSelect">
+            <label for="categoria" id="categoriaSelect">Categoría:</label>
+            <select class="form-control" id="categoria">
+                <option disabled selected value="disable">Escoge un servicio</option>
+                <option value="Comestico">Comestico</option>
+                <option value="General">General</option>
+                <option value="Preventivo">Preventivo</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="mensajeTxt">Mensaje:</label>
+            <textarea class="form-control" id="mensajeTxt" rows="3" placeholder="Ingrese su mensaje"></textarea>
+        </div>
+        <div class="form-group">
+            Opcional:
+            <div class="form-check mt-3">
+                <input type="checkbox" class="form-check-input" id="llamada">
+                <label class="form-check-label" for="llamada">Llamada</label>
+            </div>
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="whatsapp">
+                <label class="form-check-label" for="whatsapp">WhatsApp</label>
+            </div>
+        </div>
+        <button type="button" class="btn btn-primary" style="margin-top: 10px" id="btnSend" onclick="validateForm()">Enviar</button>
+    </form>
+</div>
+
+</section>
+
+<footer>
+    <div class="container">
+        <div class="row">
+
+        <div class="col-6">
+        <div class="footer-logo" style="margin-top:45px;">
+            <a href="#">D E N T A L C A R E</a>
+        </div>
+        
+        </div>
+        
+        <div class="col-6">
+            <ul class="social-links">
+                <li><a href="#" target="_blank"><i class="fab fa-facebook"></i> Facebook</a></li>
+                <li><a href="#" target="_blank"><i class="fab fa-twitter"></i> Twitter</a></li>
+                <li><a href="#" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                <li><a href="#" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
+            </ul>
+        <div class="contact-info">
+            <p>Dirección: San Pedro, Montes de Oca, 300 metros sur del parque Central.</p>
+            <p>Teléfono: +123 456 789</p>
+            <p>Correo Electrónico: <a href="mailto:info@empresa.com">info@dentalcare.com</a></p>
+        </div>
+        </div>
+
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+
+<script src="js/main.js"></script>
+<!-- <script src="js/cotiza.js"></script> -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>
