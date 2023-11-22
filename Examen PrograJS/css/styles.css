@@ -448,9 +448,7 @@ footer {
         color: #f1e8e1;
     }
 
-    .p1{
-        /* font-weight: bold; */
-    }
+
     .p2{
         font-weight:300;
         font-style: italic;
@@ -525,3 +523,21 @@ footer {
 }
 
 
+/* serviciios  */
+
+/* Estilo por defecto */
+.button-cotiza {
+    background-color: #009e91a7;
+    border-style: hidden;
+    transition: background-color 0.3s ease; /* Agregamos transición para suavizar el cambio */
+}
+
+/* Estilo al pasar el mouse (hover) */
+.button-cotiza:hover {
+    background-color: #009e91; /* Cambiamos el color al pasar el mouse */
+}
+
+/* encuesta */
+.input-error {
+    border: 3px solid red;
+}

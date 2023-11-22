@@ -399,6 +399,34 @@ document.addEventListener('click', function (event) {
 
 // Nuestros resultados 
 
+function OpcionGaleriaEscogida(selectedElement){
+    let GaleriaEscogida = selectedElement.value;
+    let galeriaReparaciones = document.getElementById("galeriaReparaciones");
+    let galeriaOrtodoncia = document.getElementById("galeriaOrtodoncia");
+    let imagenFondoGaleria = document.getElementById("imagenFondoGaleria");
+    let opcion0 = document.getElementById("opcion0") 
+
+    console.log(GaleriaEscogida);
+
+    if (GaleriaEscogida === "Diseno"){
+        galeriaReparaciones.style.display = "block";
+        galeriaOrtodoncia.style.display = "none";
+        imagenFondoGaleria.style.display = "none";
+    }
+    else if (GaleriaEscogida === "Ortodoncia"){
+            galeriaOrtodoncia.style.display = "block";
+            galeriaReparaciones.style.display = "none";
+            imagenFondoGaleria.style.display = "none";
+        }
+    else if(GaleriaEscogida === "opcion0"){
+            galeriaOrtodoncia.style.display = "none";
+            galeriaReparaciones.style.display = "none";
+            imagenFondoGaleria.style.display = "block";
+
+    }
+    }
+
+
 // Contactanos
 
 function validateForm() {
@@ -457,4 +485,59 @@ function limpiar() {
 }
 
 
+// servicios 
+function EnviarEmail(){
+
+let UserEmailTxt = document.getElementById('inscriptionTxt').value;
+const expressionEmail = /^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$/;
+let alerta = document.getElementById('mensajeAlert');
+
+if( UserEmailTxt === ''){
+    alerta.textContent = "Por favor ingresa tu correo";
+    alerta.classList.add('alertaRoja');
+    alerta.classList.remove('alertaVerde');
+} else if (expressionEmail.test(UserEmailTxt) === false){
+    alerta.textContent = "Correo Invalido";
+    alerta.classList.add('alertaRoja');
+    alerta.classList.remove('alertaVerde');
+} else {
+    alerta.textContent = "Su registro fue exitoso ";
+    alerta.classList.remove('alertaRoja');
+    alerta.classList.add('alertaVerde');
+    emailjs.sendForm('service_y7mjmqq', 'template_w6eedf8', '#inscription', '_OTkL7crYfTyuInQv');
+    limpiarEmail()
+}
+
+
+
+}
+
+function limpiarEmail() {
+    let UserEmailTxt = document.getElementById('inscriptionTxt');
+    UserEmailTxt.value = '';
+}
+
+// Encuesta Web 
+
+function validateForm() {
+    // Obtener referencias a los elementos del formulario
+    let satisfactionInput = document.getElementById('satisfaction');
+    let checkCostCheckbox = document.getElementById('checkCost');
+    let checkLocationCheckbox = document.getElementById('checkLocation');
+    let checkReputationCheckbox = document.getElementById('checkReputation');
+    let checkAdditionalServicesCheckbox = document.getElementById('checkAdditionalServices');
+    let checkFlexibleHoursCheckbox = document.getElementById('checkFlexibleHours');
+    let checkCosmeticDentistryCheckbox = document.getElementById('checkCosmeticDentistry');
+    let checkOrthodonticsCheckbox = document.getElementById('checkOrthodontics');
+    let checkTeethWhiteningCheckbox = document.getElementById('checkTeethWhitening');
+    let checkDentalImplantsCheckbox = document.getElementById('checkDentalImplants');
+    let checkOtherCheckbox = document.getElementById('checkOther');
+    let otherTextInput = document.getElementById('otherText');
+    let positiveRadio = document.getElementById('positive');
+    let neutralRadio = document.getElementById('neutral');
+    let negativeRadio = document.getElementById('negative');
+    let veryNegativeRadio = document.getElementById('veryNegative');
+
+
+}
 

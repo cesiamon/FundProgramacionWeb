@@ -95,19 +95,19 @@
     <h1 class="text-center">Nuestros Resultados</h1>
     
     <h3 class="mt-5" >Por favor escoge la galeria que quierer ver:</h1>
-    <select name="menuOpciones" id="menuOpciones" class="form-select form-select-lg mb-5" >
-        <option value="" class="opcion0">Seleccionar una categoría</option>
-        <option value="Reparaciones" class="opcion1">Diseño de sonrisa</option>
-        <option value="Ortodoncia" class="opcion2">Ortodoncia</option>
-        <option value="rapida" class="opcion3">Comida rápida</option>
+    <select name="menuOpciones" id="menuOpciones" class="form-select form-select-lg mb-5" onchange="OpcionGaleriaEscogida(this)" >
+        <option value="opcion0" class="opcion0">Seleccionar una categoría</option>
+        <option value="Diseno" id="Diseno">Diseño de sonrisa</option>
+        <option value="Ortodoncia" id="Ortodoncia">Ortodoncia</option>
+        <!-- <option value="rapida" id="Galeria3">Comida rápida</option> -->
     </select>
 
-<div class="text-center">
+<div class="text-center" id="imagenFondoGaleria" >
     <img style="height: 700px;"  src="https://img.freepik.com/foto-gratis/mujer-complacida-aparatos-dentales-tomando-selfie_197531-16716.jpg?w=1800&t=st=1700625289~exp=1700625889~hmac=fcfc7273296a85082643169c5adc66e49c339aaa439059b80a1b4223e9ed8663" alt="">
 </div>
 
-<div class="galeriaFotos galeriaReparaciones fondo mb-5">
-    <div class="tz-gallery" hidden>
+<div class="galeriaFotos fondo mb-5">
+    <div class="tz-gallery" id="galeriaReparaciones" style="display: none;">
         <div class="row text-center container">
             <div class="col-sm-12 col-md-6 col-lg-4 mb-5">
                 <a class="" href="img/reparaciones/repair1.jpeg" >
@@ -133,8 +133,8 @@
     </div>
 </div>
 
-<div class="galeriaFotos galeriaOrtodoncia fondo mb-5 hidden">
-    <div class="tz-gallery" hidden>
+<div class="galeriaFotos fondo mb-5">
+    <div class="tz-gallery"  id="galeriaOrtodoncia" style="display: none;">
         <div class="row text-center container">
             <div class="col-sm-12 col-md-6 col-lg-4 mb-5">
                 <a class="" href="img/ortodoncia/orto1.jpeg" >

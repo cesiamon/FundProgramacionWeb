@@ -51,7 +51,7 @@
 #baguetteBox-overlay .full-image img {
     display: inline-block;
     width: 700px;
-    height: 500px;
+    height: 600px;
     max-height: 100%;
     max-width: 100%;
     vertical-align: middle;
@@ -156,7 +156,7 @@
     top: calc(50% - 30px);
     width: 44px;
     height: 60px;
-    background-color: brown;
+    background-color: none;
 }
 
 .baguetteBox-button {
@@ -176,9 +176,9 @@
     transition: background-color 0.4s ease;
 }
 
-.baguetteBox-button:focus,
+
 .baguetteBox-button:hover {
-    background-color: rgba(50, 50, 50, 0.9);
+    background-color: #009e91f0;
 }
 
 .baguetteBox-button#next-button {
@@ -199,7 +199,7 @@
     width: 30px;
     height: 30px;
     color: #fff;
-    background-color: brown;
+    /* background-color: brown; */
 }
 
 
@@ -267,3 +267,4 @@
         transform: scale(1);
     }
 }
+
