@@ -34,37 +34,52 @@
     </style>
 </head>
 
-<header>
+<header >
+
     
     <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: transparent;">
-        <div class="container" style="height: 125px; margin-top: 25px;">
-            <a class="navbar-brand" href="#">
+        <div class="container-fluid" style="height: 125px; margin-top: 25px;margin-left: 180px;">
+            <a class="navbar-brand" href="homePage.html">
                 <img src="img/LogoBlanco.png" id="logo" alt="">
             </a>
         
 
             <div class="collapse navbar-collapse" id="navbarNav" style="margin-left:500px; margin-bottom: 100px;">
                 <ul class="navbar-nav ml-auto" >
-            
                     <li class="nav-item">
-                        <a class="nav-link" href="#" style="color: #e8efef;">Servicios</a>
+                        <a class="nav-link" href="homePage.html" style="color: #e8efef;">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#" style="color: #e8efef;">Sobre Nosotros</a>
+                        <a class="nav-link" href="about.html" style="color: #e8efef;">Sobre Nosotros</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#" style="color: #e8efef;">Para Pacientes</a>
+                        <a class="nav-link" href="servicios.html" style="color: #e8efef;">Servicios</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="resultados.html" style="color: #e8efef;">Galeria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="paraPacientes.html" style="color: #e8efef;">Para Pacientes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Contacto.html" style="color: #e8efef;">Contacto</a>
                     </li>
                 </ul>
 
                 <div class="navButtons">
-                    <button >
-                        Cotiza Precios
-                    </button>
+                    <a href="cotiza.html">
+                        <button>
+                            Cotiza Precios
+                        </button>
+                    </a>
         
+                    <a href="aplicacion.html">
                     <button>
                         Agenda tu cita
                     </button>
+                </a>
+
                 </div>
             </div>
         </div>
@@ -72,23 +87,27 @@
 
     </nav>
 
-
-
 </header>
 
-<section class="mt-4 container text-center">
+<!-- nuestros resultados -->
+<section class="mt-4 container">
 
-    <h2>Nuestros Resultados</h2>
-    <select name="menuOpciones" id="menuOpciones" class="form-select form-select-lg mb-5">
+    <h1 class="text-center">Nuestros Resultados</h1>
+    
+    <h3 class="mt-5" >Por favor escoge la galeria que quierer ver:</h1>
+    <select name="menuOpciones" id="menuOpciones" class="form-select form-select-lg mb-5" >
         <option value="" class="opcion0">Seleccionar una categoría</option>
         <option value="Reparaciones" class="opcion1">Diseño de sonrisa</option>
         <option value="Ortodoncia" class="opcion2">Ortodoncia</option>
         <option value="rapida" class="opcion3">Comida rápida</option>
     </select>
 
+<div class="text-center">
+    <img style="height: 700px;"  src="https://img.freepik.com/foto-gratis/mujer-complacida-aparatos-dentales-tomando-selfie_197531-16716.jpg?w=1800&t=st=1700625289~exp=1700625889~hmac=fcfc7273296a85082643169c5adc66e49c339aaa439059b80a1b4223e9ed8663" alt="">
+</div>
 
-<div class="galeriaFotos galeriaReparaciones fondo mb-5 ">
-    <div class="tz-gallery">
+<div class="galeriaFotos galeriaReparaciones fondo mb-5">
+    <div class="tz-gallery" hidden>
         <div class="row text-center container">
             <div class="col-sm-12 col-md-6 col-lg-4 mb-5">
                 <a class="" href="img/reparaciones/repair1.jpeg" >
@@ -114,8 +133,8 @@
     </div>
 </div>
 
-<div class="galeriaFotos galeriaOrtodoncia fondo mb-5 ">
-    <div class="tz-gallery">
+<div class="galeriaFotos galeriaOrtodoncia fondo mb-5 hidden">
+    <div class="tz-gallery" hidden>
         <div class="row text-center container">
             <div class="col-sm-12 col-md-6 col-lg-4 mb-5">
                 <a class="" href="img/ortodoncia/orto1.jpeg" >
@@ -145,7 +164,10 @@
 <!-- agenda cita -->
 <section class="container-fluid text-center mi-seccion" style="background-color: #009e91f0; height: 160px;">
     <h1>¿Quieres agendar una cita?</h1>
-    <button class="btn mi-boton">Agendar</button>
+
+    <a href="aplicacion.html">
+        <button class="btn mi-boton">Agendar</button>
+    </a>
 </section>
 
 <style>
@@ -171,7 +193,6 @@
 </style>
 
 
-
 <!-- taza 0 -->
 <section class="container mt-5">
     <div class="row">
@@ -190,7 +211,9 @@
         
         <p>No importa cuál sea tu objetivo, estamos aquí para ofrecerte soluciones financieras que se adapten a tus necesidades. ¡Explora nuestras ofertas y comienza a construir tu futuro financiero hoy mismo!</p>
         
-        <button class="btn mi-boton">Leer más</button>
+        <a href="paraPacientes.html">
+            <button class="btn mi-boton">Leer más</button>
+        </a>
     </div>
     
     <!-- Segunda columna -->

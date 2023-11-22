@@ -6,7 +6,7 @@
 
 
 .navbar-dark .navbar-nav .nav-link {
-    color: black; /* Cambia el color del texto a negro */
+    color: black; 
 }
 
 /* .video-container {
@@ -187,18 +187,18 @@ footer {
     color: #333;
 }
 
-.owl-carousel h4::after {
+/* .owl-carousel h4::after {
     content: '';
     display:block;
     width: 50px;
-    height: 4px;
-    background-color: #009E92; /* Color verde */
+    height: 4px; */
+    /* background-color: #009E92; Color verde */
     /* position: absolute; */
     /* bottom: 0; */
-    right: 50%;
+    /* right: 50%;
     transform: translateX(280%);
     margin-top: 10px;
-}
+} */
 
 #section-counter h2::after{
     content: '';
@@ -214,20 +214,6 @@ footer {
 }
 
 #nuestrosServicios h2::after{
-    content: '';
-    display:block;
-    width: 110px;
-    height: 4px;
-    background-color: #009E92; /* Color verde */
-    /* position: absolute; */
-    /* bottom: 0; */
-    right: 50%;
-    transform: translateX(540%);
-    margin-top: 10px;
-
-}
-
-#tec h2::after{
     content: '';
     display:block;
     width: 110px;
@@ -285,6 +271,8 @@ footer {
     border-color: #47a391;
 }
 
+/* testimonials */
+
 .testimonials-clean {
     background-color: #f8f5f1;
     padding: 40px 0;
@@ -304,9 +292,9 @@ footer {
 
 /* Estilos de los elementos del carrusel */
 .testimonials-clean .box {
-    background-color: #fff;
+    background-color: rgb(76, 46, 46);
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 0px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin: 0 15px;
     text-align: center;
@@ -318,10 +306,11 @@ footer {
 }
 
 .testimonials-clean .author img {
-    border-radius: 50%;
+    /* border-radius: 30%; */
     width: 100px;
     height: 100px;
     margin-top: 20px;
+    margin-bottom: 15px;
 }
 
 .testimonials-clean .name {
@@ -351,7 +340,7 @@ footer {
     align-items: center;
     justify-content: space-between;
     flex: 0 0 auto;
-    height: 300px;
+    height: 430px;
 }
 
 /* about us */ 
@@ -385,7 +374,7 @@ footer {
     width: 80px; /* Ancho de la línea */
     height: 4px; /* Grosor de la línea */
     background-color: rgb(23, 177, 154); /* Color de la línea */
-  }
+}
 
 .AboutUS1Div i p{
     font-size: 16px;
@@ -460,7 +449,7 @@ footer {
     }
 
     .p1{
-        font-weight: bold;
+        /* font-weight: bold; */
     }
     .p2{
         font-weight:300;
@@ -516,13 +505,11 @@ footer {
     .parallax-window {
         min-height: 500px;
         background-color: rgba(0, 0, 0, 0.211); 
- }
- .parallaxInfoDiv{
-    
- }
+}
+
 
  /* contact */
- .alertaRoja{
+.alertaRoja{
     color: #ff0000;
     font-weight: 500;
     font-size: 18px;
@@ -532,12 +519,9 @@ footer {
     font-weight: 500;
     font-size: 18px;
 }
+
 .error {
     border: 1px solid red !important;
 }
 
-#categoria{
-    /* border: 1px solid red !important; */
-
-}
 
