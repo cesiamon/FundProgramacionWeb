@@ -19,7 +19,7 @@
     referrerpolicy="no-referrer" />
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <title>DENTALCARE</title>
+    <title class="title">DENTALCARE</title>
 </head>
 <body>
 
@@ -76,33 +76,44 @@
             <div class="collapse navbar-collapse" id="navbarNav" style="margin-left:500px; margin-bottom: 100px;">
                 <ul class="navbar-nav ml-auto" >
                     <li class="nav-item">
-                        <a class="nav-link" href="homePage.html" style="color: #e8efef;">Inicio</a>
+                        <a class="nav-link inicio" href="homePage.html" style="color: #e8efef;">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="servicios.html" style="color: #e8efef;">Servicios</a>
+                        <a class="nav-link servicios" href="servicios.html" style="color: #e8efef;">Servicios</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="about.html" style="color: #e8efef;">Sobre Nosotros</a>
+                        <a class="nav-link sobreNosotros" href="about.html" style="color: #e8efef;">Sobre Nosotros</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="resultados.html" style="color: #e8efef;">Galeria</a>
+                        <a class="nav-link galeria" href="resultados.html" style="color: #e8efef;">Galeria</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="paraPacientes.html" style="color: #e8efef;">Para Pacientes</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="Contacto.html" style="color: #e8efef;">Contacto</a>
+                        <a class="nav-link contacto" href="Contacto.html" style="color: #e8efef;">Contacto</a>
                     </li>
+
+                    
                 </ul>
 
                 <div class="navButtons">
-                    <button>
+                    <button class="cotizaPreciosHeader">
                         Cotiza Precios
                     </button>
         
-                    <button>
+                    <button class="AgendaCitaHeader">
                         Agenda tu cita
                     </button>
+                </div>
+                <div class="langWrap d-flex">
+                    
+                    <li class="nav-item" >
+                        <a href="#" language="spanish" class=" active bandera"><img style="height: 50px; width: 50px;"  class="img-fluid" src="img/es.webp" alt="Español"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" language="english" class="bandera"> <img style="height: 50px; width: 50px;"  class="img-fluid" src="img/eu.webp" alt="Ingles"></a>
+                    </li>
                 </div>
             </div>
         </div>
@@ -113,10 +124,10 @@
 
     <div class="container-fluid introDiv" style="margin-left: 180px;">
         <h1>DENTALCARE</h1>
-        <h2> Servicio personalizado de alta tecnología</h2>
+        <h2 class="headerParrafo"> Servicio personalizado de alta tecnología</h2>
         <!-- <h3>Desde 1997, DENTALCARE ha trabajado en la comunidad de costarricense. Ayuda a los pacientes a tomar  <br> control de su salud dental y lograr las sonrisas que siempre han deseado. -->
         </h3>
-        <button>
+        <button class="HeaderAgendaButton">
             Agenda tu cita
         </button>
     </div>
@@ -127,9 +138,9 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6 mt-3">
-                <h1 style="color: #009e92;">Nuestra Filosofia</h1>
-                <p style="color: #437081;">"Ayudar a los pacientes a lograr la salud dental y sonrisas hermosas es un privilegio y una responsabilidad. Durante más de 20 años, mi equipo y yo hemos brindado con orgullo la mejor experiencia dental en el Rogue Valley. <br><br> Nuestro enfoque en la comodidad está diseñado para satisfacer las necesidades de usted y toda su familia."</p>
-                <a href="#" class="btn btn-primary" style="background-color: #009E92; border-color: #009E92; margin-left: 470px;">Leer más</a>
+                <h1  class="filosofiaH1" style="color: #009e92;">Nuestra Filosofia</h1>
+                <p class="filosofiaDescription" style="color: #437081;">"Ayudar a los pacientes a lograr la salud dental y sonrisas hermosas es un privilegio y una responsabilidad. Durante más de 20 años, mi equipo y yo hemos brindado con orgullo la mejor experiencia dental en el Rogue Valley. <br><br> Nuestro enfoque en la comodidad está diseñado para satisfacer las necesidades de usted y toda su familia."</p>
+                <a href="#" class="btn btn-primary filosofiaButton" style="background-color: #009E92; border-color: #009E92; margin-left: 470px;">Leer más</a>
             </div>
             <div class="col-md-6">
                 <a data-fslightbox="gallery" href="https://www.youtube.com/watch?v=m7vNTnd5DT4">
@@ -143,14 +154,14 @@
 <!-- contador -->
 <section class="ftco-counter bg-light" id="section-counter">
     <div class="container">
-        <h2 class="text-center ">Nuestros Resultados</h2>
+        <h2 class="text-center nuestrosResultadosCounter">Nuestros Resultados</h2>
         <div class="row mt-5">
             <div class="col-md-6 col-lg-3">
                 <div class="card border-0 text-center shadow">
                     <div class="card-body">
                         <i class="fas fa-users fa-4x text-success mb-3"></i>
                         <strong class="display-4 number" data-number="567">0</strong>
-                        <p class="card-text">Clientes satisfechos</p>
+                        <p class="card-text clientesSatisfechosCounter">Clientes satisfechos</p>
                     </div>
                 </div>
             </div>
@@ -159,7 +170,7 @@
                     <div class="card-body">
                         <i class="fas fa-certificate fa-4x text-success mb-3"></i>
                         <strong class="display-4 number" data-number="470">0</strong>
-                        <p class="card-text">Reconocimientos y Certificaciones</p>
+                        <p class="card-text reconocimientosCounter">Reconocimientos y Certificaciones</p>
                     </div>
                 </div>
             </div>
@@ -168,7 +179,7 @@
                     <div class="card-body">
                         <i class="fas fa-clock fa-4x text-success mb-3"></i>
                         <strong class="display-4 number" data-number="16790">0</strong>
-                        <p class="card-text">Horas de Trabajo</p>
+                        <p class="card-text horasTrabajoCounter">Horas de Trabajo</p>
                     </div>
                 </div>
             </div>
@@ -177,7 +188,7 @@
                     <div class="card-body">
                         <i class="fas fa-medkit fa-4x text-success mb-3"></i>
                         <strong class="display-4 number" data-number="6670">0</strong>
-                        <p class="card-text">Total de Procedimientos</p>
+                        <p class="card-text procedimientosCounter">Total de Procedimientos</p>
                     </div>
                 </div>
             </div>
@@ -189,15 +200,15 @@
 <!-- our sevices -->
 <section style=" padding: 40px 0;">
     <div class="container" id="nuestrosServicios">
-        <h2 class="text-center mb-5"> SERVICIOS</h2>
+        <h2 class="text-center mb-5 serviciosH1"> SERVICIOS</h2>
         <div class="row">
             <div class="col-md-4">
                 <div class="card" style="border: none;">
                     <img src="./img/servi1.jpeg" alt="Servicio General" class="card-img-top">
                     <div class="card-body text-center"> <!-- Agregado text-center -->
-                        <h5 class="card-title">GENERAL</h5>
-                        <p class="card-text">Este es un ejemplo de párrafo en la primera tarjeta.</p>
-                        <a href="servicios.html" class="btn btn-success btn-block">Ver más</a>
+                        <h5 class="card-title generalH5">GENERAL</h5>
+                        <p class="card-text generalP">Descubre nuestra gama completa de servicios dentales generales diseñados para mantener tu sonrisa saludable.</p>
+                        <a href="servicios.html" class="btn btn-success btn-block serviciosButton1 ">Ver más</a>
                     </div>
                 </div>
             </div>
@@ -205,9 +216,9 @@
                 <div class="card" style="border: none;">
                     <img src="./img/servi2.avif" alt="Servicio Cosmético" class="card-img-top">
                     <div class="card-body text-center"> <!-- Agregado text-center -->
-                        <h5 class="card-title">COSMETICO</h5>
-                        <p class="card-text">Este es un ejemplo de párrafo en la segunda tarjeta.</p>
-                        <a href="servicios.html" class="btn btn-success btn-block">Ver más</a>
+                        <h5 class="card-title cosmeticoH5">COSMETICO</h5>
+                        <p class="card-text cosmeticoP">Transforma tu sonrisa con nuestros servicios dentales cosméticos de calidad. Explora opciones para mejorar la estética dental.</p>
+                        <a href="servicios.html" class="btn btn-success btn-block serviciosButton2">Ver más</a>
                     </div>
                 </div>
             </div>
@@ -215,9 +226,9 @@
                 <div class="card" style="border: none;">
                     <img src="./img/happydentist.jpeg" alt="Servicio Preventivo" class="card-img-top">
                     <div class="card-body text-center"> <!-- Agregado text-center -->
-                        <h5 class="card-title">PREVENTIVO</h5>
-                        <p class="card-text">Este es un ejemplo de párrafo en la tercera tarjeta.</p>
-                        <a href="servicios.html" class="btn btn-success btn-block">Ver más</a>
+                        <h5 class="card-title preventivoH5">PREVENTIVO</h5>
+                        <p class="card-text preventivoP">Prioriza tu salud bucal con nuestros servicios dentales preventivos. Descubre cómo mantener tu sonrisa radiante a largo plazo. </p>
+                        <a href="servicios.html" class="btn btn-success btn-block serviciosButton3">Ver más</a>
                     </div>
                 </div>
             </div>
@@ -230,17 +241,17 @@
 <!-- Tira fotografica -->
 
 <section>
-    <h2 class="text-center" id="tec"> Descubre la últimas tecnologías del mercado </h2>
+    <h2 class="text-center UltimasTecH2" id="tec"> Descubre la últimas tecnologías del mercado </h2>
     <div id="owl-demo" class="owl-carousel text-center">
     
-        <div class="item">
+        <div class="item" >
             <div class="">
                 <!-- lazyOwl es una instruccion de JS para agilizar la carga de las fotos -->
                 <img class="lazyOwl img-fluid rounded-circle" data-src="img/led.jpeg" alt="perfil1">
             </div>
             <div class="">
-                <h4 class="">Led de alta potencia</h4>
-                <!-- <p class="p1 text-center"> -->
+                <h4 class="ledH4">Led de alta potencia</h4>
+                <p class=" ledp p1 text-center">
                     Las lámparas de alta potencia, en manos de un profesional bien entrenado, mejoran la práctica odontológica cotidiana.            </p>
             </div>
         </div>
@@ -251,8 +262,8 @@
                 <img class="lazyOwl img-fluid rounded-circle" data-src="img/laser.jpeg" alt="perfil2">
             </div>
             <div class="">
-                <h4 class="">Tratamientos Láser.</h4>
-                <p class="p1 text-center">
+                <h4 class="laserH4">Tratamientos Láser.</h4>
+                <p class="laserp p1 text-center">
                     El láser es otra de las tecnologías en Odontología ampliamente conocida por el público, es efectivo en el corte y tratamiento de tejidos blandos en tu boca.            </p>
             </div>
         </div>
@@ -263,8 +274,8 @@
                 <img class="lazyOwl img-fluid rounded-circle" data-src="img/piezasdemano.jpeg" alt="perfil3">
             </div>
             <div class="">
-                <h4 class="">Piezas de mano</h4>
-                <p class="p1 text-center">
+                <h4 class="piezasH4">Piezas de mano</h4>
+                <p class="piezasp p1 text-center">
                     La eficacia del corte es realmente un balance entre la velocidad y el torque llevado a la fresa.            </p>
             </div>
         </div>
@@ -275,8 +286,8 @@
                 <img class="lazyOwl img-fluid rounded-circle" data-src="img/radiologia.jpeg" alt="perfil4">
             </div>
             <div class="">
-                <h4 class="">Radiografía Digital</h4>
-                <p class="p1 text-center">
+                <h4 class="radiografiah4">Radiografía Digital</h4>
+                <p class="radiografiap p1 text-center">
                     Nuestro equipo de radiografía digital permite obtener una imagen con una menor exposición para el paciente de dosis de radiación que con técnicas convencionales.            </p>
             </div>
         </div>
@@ -287,8 +298,8 @@
                 <img class="lazyOwl img-fluid rounded-circle" data-src="img/TAC.webp" alt="perfil5">
             </div>
             <div class="">
-                <h4 class="">Tomografía Axial Computarizada (TAC).</h4>
-                <p class="p1 text-center">
+                <h4 class="axialH4">Tomografía Axial Computarizada (TAC).</h4>
+                <p class="axialp p1 text-center">
                     Su tridimensionalidad y precisión permiten determinar con precisión el espacio disponible para colcar el implante.            </p>
             </div>
         </div>
@@ -299,8 +310,8 @@
                 <img class="lazyOwl img-fluid rounded-circle" data-src="img/intraoral.jpeg" alt="perfil6">
             </div>
             <div class="">
-                <h4 class="">Escaner Intraoral</h4>
-                <p class="p1 text-center">
+                <h4 class="escanerH4">Escaner Intraoral</h4>
+                <p class="escanerp p1 text-center">
                     El escaner intraoral es una de las tecnologías en Odontología que es portátil, y permite al Odontólogo tomar impresiones ópticas tridimensionales de la boca del paciente.            </p>
             </div>
         </div>
@@ -311,8 +322,8 @@
                 <img class="lazyOwl img-fluid rounded-circle" data-src="img/CAD:CAM.jpeg" alt="perfil7">
             </div>
             <div class="">
-                <h4 class="">Tecnología CAD-CAM</h4>
-                <p class="p1 text-center">
+                <h4 class="CADH4">Tecnología CAD-CAM</h4>
+                <p class=" CADp p1 text-center">
                     En Odontología específicamente, produce protésis, incluyendo coronas, carillas, onlays, protésis fijas y también removibles, dispositivos de ortodoncia, coronas sobre implantes, entre otros.            </p>
             </div>
         </div>
@@ -323,8 +334,8 @@
                 <img class="lazyOwl img-fluid rounded-circle" data-src="img/OdontologiaRobótica.jpeg" alt="perfil8">
             </div>
             <div class="cau_left">
-                <h4 class="">Tecnología robótica</h4>
-                <p class="p1 text-center">
+                <h4 class="robotH4">Tecnología robótica</h4>
+                <p class="robotp p1 text-center">
                     Automatización, Optimización, sistema CAD-CAM, robot ortodóntico.
                 </p>
             </div>
@@ -357,10 +368,10 @@
                 </div>
             </div>
             <div class="col-md-6">
-                <h1 style="color: #009e92;">Planes y Financiamiento para Nuevos Pacientes</h1>
-                <p style="color: #437081;">Nuestro amable personal te explicará qué esperar, te proporcionará opciones de pago y financiamiento, y responderá todas tus preguntas. Escucharemos tus metas de salud y preocupaciones. Juntos, delinearemos un plan de atención completamente personalizado a tus necesidades y metas de sonrisa.</p>
-                <p style="color: #437081;">Nuestro equipo completo está comprometido en ayudarte a prevenir problemas dentales y lograr una sonrisa saludable, hermosa y llena de confianza.</p>
-                <a href="Contacto.html" class="btn btn-primary" style="background-color: #009E92; border-color: #009E92;">Contactanos</a>
+                <h1 style="color: #009e92;" class="financiamientoH1">Planes y Financiamiento para Nuevos Pacientes</h1>
+                <p style="color: #437081;" class="financiamientoP1">Nuestro amable personal te explicará qué esperar, te proporcionará opciones de pago y financiamiento, y responderá todas tus preguntas. Escucharemos tus metas de salud y preocupaciones. Juntos, delinearemos un plan de atención completamente personalizado a tus necesidades y metas de sonrisa.</p>
+                <p style="color: #437081;" class="financiamientoP2">Nuestro equipo completo está comprometido en ayudarte a prevenir problemas dentales y lograr una sonrisa saludable, hermosa y llena de confianza.</p>
+                <a href="Contacto.html" class=" financiamientoButton btn btn-primary" style="background-color: #009E92; border-color: #009E92;">Contactanos</a>
             </div>
             
         </div>
@@ -375,18 +386,18 @@
 <div class="testimonials-clean">
     <div class="container">
         <div class="intro">
-            <h2 class="text-center">Testimonios</h2>
-            <p class="text-center">¡Nuestros clientes nos adoran! Lee lo que tienen que decir:</p>
+            <h2 class="text-center testimoniosH2">Testimonios</h2>
+            <p class="text-center testimoniosp">¡Nuestros clientes nos adoran! Lee lo que tienen que decir:</p>
         </div>
         <!-- Agrega un contenedor para el carrusel Owl Carousel -->
         <div class="owl-carousel" id="owl-carousel2">
             <div class="item">
-                <div class="author"><img class="rounded-circle"  style="object-fit: cover;" src="https://img.freepik.com/foto-gratis/retrato-mujer-caucasica-sonriendo_53876-24998.jpg?w=1800&t=st=1700619885~exp=1700620485~hmac=5be5fabe805e22eb42ef85d7ebde63f3e0dbbaac25df04919bc9c5aa88a67639">
+                <div class="author"><img class="rounded-circle" id="testimonial1" style="object-fit: cover;" src="https://img.freepik.com/foto-gratis/retrato-mujer-caucasica-sonriendo_53876-24998.jpg?w=1800&t=st=1700619885~exp=1700620485~hmac=5be5fabe805e22eb42ef85d7ebde63f3e0dbbaac25df04919bc9c5aa88a67639">
                     <h5 class="name">Elena Flores</h5>
-                    <p class="title">Cliente regular.</p>
+                    <p class="title quienEsTestimonio1">Cliente regular.</p>
                 </div>
                 <div class="box">
-                    <p class="description">"Mi sonrisa cambió por completo en DentalCare. Atención excepcional, resultados asombrosos. ¡Gracias por cuidar tan bien de mí!".</p>
+                    <p class="description resenaTestimonio1">"Mi sonrisa cambió por completo en DentalCare. Atención excepcional, resultados asombrosos. ¡Gracias por cuidar tan bien de mí!".</p>
                     <div class="star-rating">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -398,11 +409,11 @@
             </div>
             <div class="item">
                 <div class="author"><img class="rounded-circle" style="object-fit: cover;" src="https://img.freepik.com/foto-gratis/retrato-adolescente_23-2148105583.jpg?w=1800&t=st=1700620049~exp=1700620649~hmac=c2a9f4ba64bd7b8f2cb6228bd371999f5cfbe977d1ad6b531e0851527299ed31">
-                    <h5 class="name">Miguel Castro Lu.</h5>
-                    <p class="title">Fundador Dent Co.</p>
+                    <h5 class="name nombreTestimonio2">Miguel Castro Lu.</h5>
+                    <p class="title quienEsTestimonio2">Fundador Dent Co.</p>
                 </div>
                 <div class="box">
-                    <p class="description">"DentalCare hizo que superar mi miedo fuera fácil. Atención personalizada, tratamiento eficiente. Mi salud bucal nunca ha sido mejor."</p>
+                    <p class="description resenaTestimonio2">"DentalCare hizo que superar mi miedo fuera fácil. Atención personalizada, tratamiento eficiente. Mi salud bucal nunca ha sido mejor."</p>
                     <div class="star-rating">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -413,30 +424,14 @@
                 </div>
                 
             </div>
-            <div class="item">
-                <div class="author"><img class="rounded-circle" src="https://img.freepik.com/foto-gratis/senora-asiatica-joven-hermosa-que-coloca-aislada_171337-8719.jpg?w=1380&t=st=1699481769~exp=1699482369~hmac=0be0970f676c06aeea20cda7375c45afdaf70f8f81752af1fa78e67310168088">
-                    <h5 class="name">Emily Clark</h5>
-                    <p class="title">Productora de Creative Ltd.</p>
-                </div>
-                <div class="box">
-                    <p class="description">"DentalCare va más allá. Profesionalismo, tecnología avanzada. Mi confianza en la odontología se disparó. ¡Altamente recomendado!"</p>
-                    <div class="star-rating">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                </div>
-            </div>
 
             <div class="item">
                 <div class="author"><img class="rounded-circle" src="https://img.freepik.com/foto-gratis/mujer-joven-llevando-camisa-rayas-anteojos_273609-13226.jpg?w=1380&t=st=1699481893~exp=1699482493~hmac=155a58e3b05a3d12f63988d011b6dd3c3aa705b773ca56eba9518ae5c0a4be7f">
-                    <h5 class="name">Ben Johnson</h5>
-                    <p class="title">Maximax CEO.</p>
+                    <h5 class="name nombreTestimonio3">Ben Johnson</h5>
+                    <p class="title quienEsTestimonio3">Maximax CEO.</p>
                 </div>
                 <div class="box">
-                    <p class="description">"Mi sonrisa cambió por completo en DentalCare. Atención excepcional, resultados asombrosos. ¡Gracias por cuidar tan bien de mí!".</p>
+                    <p class="description resenaTestimonio3">"Mi sonrisa cambió por completo en DentalCare. Atención excepcional, resultados asombrosos. ¡Gracias por cuidar tan bien de mí!".</p>
                     <div class="star-rating">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -448,11 +443,11 @@
             </div>
             <div class="item">
                 <div class="author"><img class="rounded-circle" src="https://img.freepik.com/foto-gratis/joven-barbudo-camisa-rayas_273609-5677.jpg?w=1380&t=st=1699481851~exp=1699482451~hmac=edde90e9739d0c3c7caf9f7f7f173fdf54a948a4aa2bd7cfb4f836928d3ebaf7">
-                    <h5 class="name">Carl Kent</h5>
-                    <p class="title">Fundador de Style Co.</p>
+                    <h5 class="name nombreTestimonio4">Carl Kent</h5>
+                    <p class="title quienEsTestimonio4">Fundador de Style Co.</p>
                 </div>
                 <div class="box">
-                    <p class="description">"DentalCare hizo que superar mi miedo fuera fácil. Atención personalizada, tratamiento eficiente. Mi salud bucal nunca ha sido mejor."</p>
+                    <p class="description resenaTestimonio4">"DentalCare hizo que superar mi miedo fuera fácil. Atención personalizada, tratamiento eficiente. Mi salud bucal nunca ha sido mejor."</p>
                     <div class="star-rating">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -465,11 +460,11 @@
             </div>
             <div class="item">
                 <div class="author"><img class="rounded-circle" src="https://img.freepik.com/foto-gratis/senora-asiatica-joven-hermosa-que-coloca-aislada_171337-8719.jpg?w=1380&t=st=1699481769~exp=1699482369~hmac=0be0970f676c06aeea20cda7375c45afdaf70f8f81752af1fa78e67310168088">
-                    <h5 class="name">Emily Clark</h5>
-                    <p class="title">Productora de Creative Ltd.</p>
+                    <h5 class="name nombreTestimonio5">Emily Clark</h5>
+                    <p class="title quienEsTestimonio5">Productora de Creative Ltd.</p>
                 </div>
                 <div class="box">
-                    <p class="description">"DentalCare va más allá. Profesionalismo, tecnología avanzada. Mi confianza en la odontología se disparó. ¡Altamente recomendado!"</p>
+                    <p class="description resenaTestimonio5">"DentalCare va más allá. Profesionalismo, tecnología avanzada. Mi confianza en la odontología se disparó. ¡Altamente recomendado!"</p>
                     <div class="star-rating">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -504,9 +499,9 @@
                 <li><a href="#" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
             </ul>
         <div class="contact-info">
-            <p>Dirección: San Pedro, Montes de Oca, 300 metros sur del parque Central.</p>
-            <p>Teléfono: +123 456 789</p>
-            <p>Correo Electrónico: <a href="mailto:info@empresa.com">info@dentalcare.com</a></p>
+            <p class="direccionp">Dirección: San Pedro, Montes de Oca, 300 metros sur del parque Central.</p>
+            <p class="telp">Teléfono: +123 456 789</p>
+            <p class="correop">Correo Electrónico: info@dentalcare.com</p>
         </div>
         </div>
 
@@ -603,6 +598,7 @@
  <script src="js/main.js "></script>
 <!--  -->
 
+<script src="js/idiomas.js"></script>
 <script src="js/main.js"></script>
 <script src="js/parallax.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
