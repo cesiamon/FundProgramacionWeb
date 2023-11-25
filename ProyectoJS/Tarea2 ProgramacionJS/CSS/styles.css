@@ -4,7 +4,7 @@
     background-image: url('../Imagenes/kidsmiling.jpg'); 
     background-size: cover;
     background-attachment: fixed;
-    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
+    box-shadow: inset 0 0 0 1000px #4c49497d;
     animation: a 2s ease infinite alternate;
     min-height: 100vh;
 }
@@ -19,9 +19,9 @@
 
 
 .icono{
-    width: 80px; /* Tamaño del icono */
-    height: 80px;
-    background-image: url('../Imagenes/diente.png');
+    width: 90px; /* Tamaño del icono */
+    height: 120px;
+    /* background-image: url('../Imagenes/diente.png'); */
     background-size: cover;
     /* position: fixed; */
     bottom: 300px;
@@ -93,11 +93,11 @@ align-content: center;
 }
 
 .card{
-height: 370px;
+height: 390px;
 margin-top: auto;
 margin-bottom: auto;
 width: 400px;
-background-color: rgba(242, 242, 255, 0.05) !important;
+background-color: #6965657d !important;
 }
 
 .card-header h3{
@@ -106,16 +106,52 @@ color: white;
 
 .input-group-prepend span{
 width: 50px;
-background-color: #12d4ff;;
+background-color: #1cceb3;;
 color: black;
 border:0 !important;
 }
 
-.login_btn{
-  color: #00bcd4;
+.btn_entrar{
+  color: #1cceb3;
   background-color: transparent;
-  border-color: #12d4ff;
+  border: 2px solid #1cceb3;
   border-radius: 5px;
+  border-width: 2px;
+  width: 90px;
+  padding: 2px;
+  box-shadow: none;
+}
+
+.btn_entrar:hover {
+  color: black;
+  background-color: #1cceb3;
+  border-color: #1cceb3;
+}
+
+.bnt_landing{
+  /* box-sizing: border-box; */
+  border: 2px solid #1cceb3;
+  color: #1cceb3;
+  font-size: 20px;
+  background-color: transparent;
+  border-radius: 13px;
+  border-width: 3px;
+  box-shadow: none;
+  width: 90px;
+  padding: 10px;
+}
+
+.btn_landing:hover {
+  color: black;
+  background-color: #1cceb3;
+  border-color: #1cceb3;
+}
+
+.login_btn{
+  color: #1cceb3;
+  background-color: transparent;
+  border: 2px solid #1cceb3;
+    border-radius: 5px;
   border-width: 1px;
   width: 90px;
   padding: 2px;
@@ -123,8 +159,8 @@ border:0 !important;
 
 .login_btn:hover {
   color: black;
-  background-color: #12d4ff;
-  border-color: #12d4ff;
+  background-color: #1cceb3;
+  border-color: #1cceb3;
 }
 
 /* Homepage */

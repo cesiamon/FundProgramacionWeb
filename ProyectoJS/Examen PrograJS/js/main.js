@@ -440,6 +440,23 @@ function validateForm() {
     let mensaje = document.getElementById('mensajeTxt').value;
     
     
+    if (nombre === '' || email === '' || numero === '' || categoria === 'disable' || mensaje === '' ) {
+        Swal.fire({
+            icon: 'error', 
+            title: 'Campos Vacíos',
+            text: 'Rellene los campos en rojo.',
+            confirmButtonText: 'Aceptar'
+        });
+    }
+    else {
+        Swal.fire({
+            icon: 'success', 
+            title: 'Mensaje enviado',
+            text: 'Pronto le contactaremos.',
+            confirmButtonText: 'Aceptar'
+        });
+    }
+
     if (nombre === '') {
         markAsError('nombreTxt');
     }
@@ -519,25 +536,224 @@ function limpiarEmail() {
 
 // Encuesta Web 
 
-function validateForm() {
+var frm = document.forms["form"];
+EmptySpaceCheckBox1 = false;
+EmptySpaceCheckBox2 = false;
+
+var EmptySpaceInput = false;
+var EmptyRatio1 = false;
+var EmptyRatio2 = false;
+var EmptyRatio3 = false;
+
+
+function validateForm2() {
     // Obtener referencias a los elementos del formulario
-    let satisfactionInput = document.getElementById('satisfaction');
-    let checkCostCheckbox = document.getElementById('checkCost');
-    let checkLocationCheckbox = document.getElementById('checkLocation');
-    let checkReputationCheckbox = document.getElementById('checkReputation');
-    let checkAdditionalServicesCheckbox = document.getElementById('checkAdditionalServices');
-    let checkFlexibleHoursCheckbox = document.getElementById('checkFlexibleHours');
-    let checkCosmeticDentistryCheckbox = document.getElementById('checkCosmeticDentistry');
-    let checkOrthodonticsCheckbox = document.getElementById('checkOrthodontics');
-    let checkTeethWhiteningCheckbox = document.getElementById('checkTeethWhitening');
-    let checkDentalImplantsCheckbox = document.getElementById('checkDentalImplants');
-    let checkOtherCheckbox = document.getElementById('checkOther');
-    let otherTextInput = document.getElementById('otherText');
-    let positiveRadio = document.getElementById('positive');
-    let neutralRadio = document.getElementById('neutral');
-    let negativeRadio = document.getElementById('negative');
-    let veryNegativeRadio = document.getElementById('veryNegative');
+    // let satisfaction = document.getElementById('satisfaction');
+    // let checkCost = document.getElementById('checkCost');
+    // let checkLocation = document.getElementById('checkLocation');
+    // let checkReputation = document.getElementById('checkReputation');
+    // let checkAdditionalServices = document.getElementById('checkAdditionalServices');
+    // let checkFlexibleHours = document.getElementById('checkFlexibleHours');
+    // let checkCosmeticDentistry = document.getElementById('checkCosmeticDentistry');
+    // let checkOrthodontics = document.getElementById('checkOrthodontics');
+    // let checkTeethWhitening = document.getElementById('checkTeethWhitening');
+    // let checkDentalImplants = document.getElementById('checkDentalImplants');
+
+    // let veryPositive = document.getElementById('veryPositive');
+    // let positive = document.getElementById('positive');
+    // let neutral = document.getElementById('neutral');
+    // let negative = document.getElementById('negative');
+    // let veryNegative = document.getElementById('veryNegative');
+
+
+    validateInput();
+    validateCheckBox();
+    validateRatios();
+ 
+    
+
+    if(EmptyRatio1 === true){
+        validationAlert()
+
+        let asterisk4 = document.createElement('span');
+        asterisk4.textContent = ' *';
+        asterisk4.style.color = 'red';
+
+        let label4 = document.querySelector(`label[for='${experienciaClinica.id}']`);
+        label4.appendChild(asterisk4);
+
+    }
+
+    if(EmptyRatio2 === true){
+        validationAlert()
+        let asterisk5 = document.createElement('span');
+        asterisk5.textContent = ' *';
+        asterisk5.style.color = 'red';
+
+        let label5 = document.querySelector(`label[for='${comunicacionPersonal.id}']`);
+        label5.appendChild(asterisk5);
+
+    }
+
+    if(EmptyRatio3 === true){
+        validationAlert()
+        let asterisk6 = document.createElement('span');
+        asterisk6.textContent = ' *';
+        asterisk6.style.color = 'red';
+
+        let label6 = document.querySelector(`label[for='${experienciaAgenda.id}']`);
+        label6.appendChild(asterisk6);
+
+    }
+
+    if(EmptySpaceInput === true){
+        validationAlert()
+        let asterisk3 = document.createElement('span');
+        asterisk3.textContent = ' *';
+        asterisk3.style.color = 'red';
+
+        let label3 = document.querySelector(`label[for='${satisfaction.id}']`);
+        label3.appendChild(asterisk3);
+    }
+
+    if (EmptySpaceCheckBox1 === true) {
+        validationAlert()
+        let OpcionesImportantes = document.getElementById('OpcionesImportantes');
+
+        // Asterisko1
+        let asterisk = document.createElement('span');
+        asterisk.textContent = ' *';
+        asterisk.style.color = 'red';
+
+        let label = document.querySelector(`label[for='${OpcionesImportantes.id}']`);
+        label.appendChild(asterisk);
+        
+
+    }
+    if (EmptySpaceCheckBox2 === true) {
+        validationAlert()
+        let serviciosAdicionales = document.getElementById('serviciosAdicionales');
+        // Asterisko2
+        let asterisk2 = document.createElement('span');
+        asterisk2.textContent = ' *';
+        asterisk2.style.color = 'red';
+
+        let label2 = document.querySelector(`label[for='${serviciosAdicionales.id}']`);
+        label2.appendChild(asterisk2);
+        
+    }
 
 
 }
+
+function validateInput(){
+
+    console.log('satisfaction.value --> ', satisfaction.value)
+
+    if (satisfaction.value === "") {
+        EmptySpaceInput = true;
+    }else{
+        datosCorrectos()
+    }
+}
+
+
+function validateCheckBox() {
+    var frm = document.forms["form"];
+    EmptySpaceCheckBox1 = false;
+    EmptySpaceCheckBox2 = false;
+
+    if (
+        !frm["checkCost"].checked &&
+        !frm["checkLocation"].checked &&
+        !frm["checkReputation"].checked &&
+        !frm["checkAdditionalServices"].checked
+        
+    ) {
+        EmptySpaceCheckBox1 = true;
+
+    }else{
+        datosCorrectos()
+    }
+
+    if (
+        !frm["checkCosmeticDentistry"].checked &&
+        !frm["checkOrthodontics"].checked &&
+        !frm["checkTeethWhitening"].checked &&
+        !frm["checkDentalImplants"].checked
+    ) {
+        EmptySpaceCheckBox2 = true;
+    }else {
+        datosCorrectos()
+    }
+} 
+
+function validateRatios(){
+    var frm = document.forms["form"];
+    EmptyRatio1 = false;
+
+    if (
+        !frm["veryPositive1"].checked &&
+        !frm["positive1"].checked &&
+        !frm["neutral1"].checked &&
+        !frm["negative1"].checked &&
+        !frm["veryNegative1"].checked
+    ) {
+        EmptyRatio1 = true;
+    }else{
+        datosCorrectos()
+    }
+
+    if (
+        !frm["veryPositive2"].checked &&
+        !frm["positive2"].checked &&
+        !frm["neutral2"].checked &&
+        !frm["negative2"].checked &&
+        !frm["veryNegative2"].checked
+    ) {
+        EmptyRatio2 = true;
+    }else{
+        datosCorrectos()
+    }
+
+    if (
+        !frm["veryPositive3"].checked &&
+        !frm["positive3"].checked &&
+        !frm["neutral3"].checked &&
+        !frm["negative3"].checked &&
+        !frm["veryNegative3"].checked
+    ) {
+        EmptyRatio3 = true;
+    }else{
+        datosCorrectos()
+    }
+}
+
+function validationAlert(){
+    swal.fire({
+        /* icon: "error",*/
+        title: "Por favor completa todos los campos",
+        // text: "",
+        confirmButtonText: "Intentar de nuevo",
+        confirmButtonColor: "#008383",
+        html: '<iframe src="https://lottie.host/?file=39f272c7-e7c0-47be-ad30-3f0a2e86b9cd/bXUbdoAvfP.json"></iframe> <br><p>',
+    });
+}
+
+function datosCorrectos(){
+    Swal.fire({
+        title: "Encuesta Enviada",
+        text:"Muchas gracias por su tiempo!",
+        showConfirmButton: false,
+        timer: 5000,
+        html: '<iframe src="https://lottie.host/?file=cda0d60c-0580-47dd-8e7b-2af90ccbe152/kR6xj6ooFC.json"></iframe> <br><br><p>Un momento!</p>',
+
+    })
+}
+
+function cacularEncuenta(){
+
+}
+
+
 

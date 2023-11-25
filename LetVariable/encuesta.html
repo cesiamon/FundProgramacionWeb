@@ -12,7 +12,7 @@
 <div class="container mt-5">
     <h1 class="mb-4">Encuesta DentalCare</h1>
 
-    <form>
+    <form id="form">
 
         <!-- Pregunta de Respuesta Input -->
         <div class="mb-3">
@@ -22,7 +22,7 @@
 
         <!-- Preguntas de Checkbox -->
         <div class="mb-3">
-            <label>Marca todas las opciones que consideres importantes al elegir una clínica dental.</label>
+            <label id="OpcionesImportantes" for="OpcionesImportantes">Marca todas las opciones que consideres importantes al elegir una clínica dental.</label>
             <div class="form-check">
                 <input class="form-check-input" type="checkbox" value="cost" id="checkCost">
                 <label class="form-check-label" for="checkCost">Costo</label>
@@ -39,15 +39,11 @@
                 <input class="form-check-input" type="checkbox" value="additionalServices" id="checkAdditionalServices">
                 <label class="form-check-label" for="checkAdditionalServices">Servicios adicionales</label>
             </div>
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="flexibleHours" id="checkFlexibleHours">
-                <label class="form-check-label" for="checkFlexibleHours">Horarios flexibles</label>
-            </div>
         </div>
 
         <!-- Preguntas de Checkbox -->
         <div class="mb-3">
-            <label>¿Qué servicios adicionales te gustaría ver en la clínica dental? (Selecciona todas las que apliquen)</label>
+            <label id="serviciosAdicionales" for="serviciosAdicionales">¿Qué servicios adicionales te gustaría ver en la clínica dental? (Selecciona todas las que apliquen)</label>
             <div class="form-check">
                 <input class="form-check-input" type="checkbox" value="cosmeticDentistry" id="checkCosmeticDentistry">
                 <label class="form-check-label" for="checkCosmeticDentistry">Odontología cosmética</label>
@@ -63,11 +59,6 @@
             <div class="form-check">
                 <input class="form-check-input" type="checkbox" value="dentalImplants" id="checkDentalImplants">
                 <label class="form-check-label" for="checkDentalImplants">Implantes dentales</label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="other" id="checkOther">
-                <label class="form-check-label" for="checkOther">Otro (especifica):</label>
-                <input type="text" class="form-control" id="otherText" name="otherText">
             </div>
         </div>
 
@@ -147,7 +138,7 @@
             </div>
         </div>
 
-        <button type="submit" class="btn btn-primary" onclick="validateForm()">Enviar Encuesta</button>
+        <button type="button" class="btn btn-primary" onclick="validateForm()">Enviar Encuesta</button>
     </form>
 </div>
 

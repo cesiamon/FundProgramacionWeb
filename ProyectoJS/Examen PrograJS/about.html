@@ -8,6 +8,7 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-ZyZXEAg3QhqLMpG8r+5A/kd1waMI9q9M/GWjrruzaU6Pp+w5cjX6J0TmCOlE3FFdB" crossorigin="anonymous">
+    <Script src="https://aframe.io/releases/1.4.2/aframe.min.js"></Script>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fslightbox@2.8.3/dist/fslightbox.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
@@ -181,9 +182,9 @@ header::before {
 </section>
 
 <!-- nuestros integrantes -->
-<section class="integranteDiv text-center mt-5">
-    <h2 >CONOCE A NUESTROS ESPECIALISTAS</h2>
-    <h1 >TODO UN EQUIPO SOLO PARA VOS</h1>
+<section class="integranteDiv  mt-5">
+    <h2 class="">CONOCE A NUESTROS ESPECIALISTAS</h2>
+    <h1 class="">TODO UN EQUIPO SOLO PARA VOS</h1>
 
     <div class="container mt-4">
         <div class="row">
@@ -224,49 +225,35 @@ header::before {
     </div>
 </section>
 
-
-
-<section style="background-color: #f8f5f1; padding: 40px 0;" class="">
-    <div class="container text-center" id="nuestrosServicios">
-        <h2 class="text-center mb-5"> SERVICIOS</h2>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="card" style="border: none;">
-                    <img src="img/servi1.jpeg" alt="Servicio General" class="card-img-top">
-                    <div class="card-body text-center"> <!-- Agregado text-center -->
-                        <h5 class="card-title">GENERAL</h5>
-                        <a href="#" class="btn btn-success btn-block">Ver más</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card" style="border: none;">
-                    <img src="img/servi2.avif" alt="Servicio Cosmético" class="card-img-top">
-                    <div class="card-body text-center"> <!-- Agregado text-center -->
-                        <h5 class="card-title">COSMETICO</h5>
-                        <a href="#" class="btn btn-success btn-block">Ver más</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card" style="border: none;">
-                    <img src="img/happydentist.jpeg" alt="Servicio Preventivo" class="card-img-top">
-                    <div class="card-body text-center"> <!-- Agregado text-center -->
-                        <h5 class="card-title">PREVENTIVO</h5>
-                        <a href="#" class="btn btn-success btn-block">Ver más</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+<!-- recorrido -->
+<section class="AboutUS1Div text-center">
+    <h1 class="text-center mt-5 mb-5">CONOCE NUESTRAS INSTALACIONES</h1>
 </section>
 
+<div class="container-fluid" style="position: relative; overflow: hidden; width: 100%; height: 800px;">
+    <a-scene embedded style="width: 100%; height: 100%;">
+        <a-sky src="img/escueladental.jpg"></a-sky>
+
+        <!-- Otros elementos de la escena -->
+        <a-entity position="0 1 -1"></a-entity>
+        <a-camera></a-camera>
+
+        <!-- <a-text font="" value="Bienvenidos(as)" witdh="10" position="-3.5 3.25 -1.5" rotation="0 0 0"></a-text> -->
+    </a-scene>
+</div>
+
+
+
+<!-- servicios -->
+
+
+
 <!-- pestanas -->
-<section class="container tapsSection">
+<section class="container-fluid tapsSection" style="background-color:#009e9163;">
 
 <div class="row">
 
-<div class="col-6" >
+<div class="col-6 mb-3" >
     <div style="background-color:#009e91fb;">
     <button class="tap" id="Escazu" onclick="verificarSede('Escazu'); openMap('https://www.google.com/maps/embed?pb=%211m26%211m12%211m3%211d62881.57629335251%212d-84.08766018832796%213d9.925752784900489%212m3%211f0%212f0%213f0%213m2%211i1024%212i768%214f13.1%214m11%213e6%214m3%213m2%211d9.9269496%212d-84.0273158%214m5%211s0x8fa0e3f13462cc7b%3A0x97219232a6ee2da8%212scenfotec%20san%20pedro%20maps%213m2%211d9.9313846%212d-84.0641474%215e0%213m2%211sen%212scr')">Escazu</button>
     <button class="tap" id="SanPedro" onclick="verificarSede('SanPedro'); openMap('https://www.google.com/maps/embed?pb=%211m18%211m12%211m3%211d3930.0308996927915%212d-84.06672232327267%213d9.931384590170499%212m3%211f0%212f0%213f0%213m2%211i1024%212i768%214f13.1%213m3%211m2%211s0x8fa0e3f13462cc7b%3A0x97219232a6ee2da8%212sCenfotec%215e0%213m2%211sen%212scr%214v1699909565628%215m2%211sen%212scr')">San Pedro</button>
@@ -274,12 +261,12 @@ header::before {
     </div>
 
     <div class="container" id="SedeInfo">
-        <h3 class="pTaps">¡Estamos para servirte!</h3>
-        <p class="pTaps">Nuestro Horario de Atencion: De Lunes a Sabado de 9 AM a 6 PM.</p>
-        <p>Seleciona la sede de tu preferencia:</p>
-        <h1 id="SedeName"></h1>
-    <P ID="SedeTelefono"></P>
-    <p id="SedeCorreo"></p>
+        <h3 class="pTaps1">¡Estamos para servirte!</h3>
+        <p class="pTaps2">Nuestro Horario de Atencion: De Lunes a Sabado de 9 AM a 6 PM.</p>
+        <p class="pTaps2">Seleciona la sede de tu preferencia:</p>
+        <h1 id="SedeName" class="pTaps1"></h1>
+    <P ID="SedeTelefono" class="pTaps2"></P>
+    <p id="SedeCorreo" class="pTaps2"></p>
     </div>
 </div>
 
@@ -294,7 +281,7 @@ header::before {
     /* Ajusta el estilo según sea necesario */
     #map-container {
         width: 100%;
-        height: 330px;
+        height: 370px;
     }
 </style>
 </section>
