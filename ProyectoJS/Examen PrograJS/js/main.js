@@ -643,6 +643,8 @@ function validateForm2() {
         
     }
 
+    calcularEncuesta()
+
 
 }
 
@@ -751,9 +753,27 @@ function datosCorrectos(){
     })
 }
 
-function cacularEncuenta(){
+function calcularEncuesta() {
+    // Get the values from the radio buttons
+    var experience1Value = document.querySelector('input[name="experience1"]:checked').value;
+    var experience2Value = document.querySelector('input[name="experience2"]:checked').value;
+    var experience3Value = document.querySelector('input[name="experience3"]:checked').value;
 
+
+    console.log(experience1Value, experience2Value, experience3Value)
+
+    // Count the number of "veryPositive" responses
+    // var veryPositiveCount = [experience1Value, experience2Value, experience3Value].filter(value => value === 'veryPositive').length;
+    // var veryPositiveCount = [experience1Value, experience2Value, experience3Value].filter(value => value === 'veryPositive').length;
+
+    // Determine the overall result based on the conditions
+    // if (veryPositiveCount === 3) {
+    //     document.getElementById('res').innerText = 'Excelente';
+    // } else if (veryPositiveCount === 2) {
+    //     document.getElementById('res').innerText = 'Buena';
+    // } else {
+    //     document.getElementById('res').innerText = 'Regular';
+    // }
 }
-
 
 

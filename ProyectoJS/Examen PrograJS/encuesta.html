@@ -96,7 +96,7 @@
 <div class="container mt-5">
     <h1 class="mb-4">Encuesta DentalCare</h1>
 
-    <form id="form">
+    <form id="form2">
 
         <!-- Pregunta de Respuesta Input -->
         <div class="mb-3">
@@ -108,15 +108,15 @@
         <div class="mb-3">
             <label id="OpcionesImportantes" for="OpcionesImportantes">Marca todas las opciones que consideres importantes al elegir una clínica dental.</label>
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="cost" id="checkCost">
-                <label class="form-check-label" for="checkCost">Costo</label>
+                <input class="form-check-input" type="checkbox" value="cost" id="checkCost" name="checkCost">
+                <label class="form-check-label" for="checkCost" >Costo</label>
             </div>
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="location" id="checkLocation">
+                <input class="form-check-input" type="checkbox" value="location" id="checkLocation" name="checkLocation">
                 <label class="form-check-label" for="checkLocation">Ubicación</label>
             </div>
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="reputation" id="checkReputation">
+                <input class="form-check-input" type="checkbox" value="reputation" id="checkReputation" name="checkReputation">
                 <label class="form-check-label" for="checkReputation">Reputación</label>
             </div>
             <div class="form-check">
@@ -129,19 +129,19 @@
         <div class="mb-3">
             <label id="serviciosAdicionales" for="serviciosAdicionales">¿Qué servicios adicionales te gustaría ver en la clínica dental? (Selecciona todas las que apliquen)</label>
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="cosmeticDentistry" id="checkCosmeticDentistry">
+                <input class="form-check-input" type="checkbox" value="cosmeticDentistry" id="checkCosmeticDentistry" name="checkCosmeticDentistry">
                 <label class="form-check-label" for="checkCosmeticDentistry">Odontología cosmética</label>
             </div>
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="orthodontics" id="checkOrthodontics">
+                <input class="form-check-input" type="checkbox" value="orthodontics" id="checkOrthodontics" name="checkOrthodontics">
                 <label class="form-check-label" for="checkOrthodontics">Ortodoncia</label>
             </div>
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="teethWhitening" id="checkTeethWhitening">
+                <input class="form-check-input" type="checkbox" value="teethWhitening" id="checkTeethWhitening" name="checkTeethWhitening">
                 <label class="form-check-label" for="checkTeethWhitening">Blanqueamiento dental</label>
             </div>
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="dentalImplants" id="checkDentalImplants">
+                <input class="form-check-input" type="checkbox" value="dentalImplants" id="checkDentalImplants" name="checkDentalImplants" >
                 <label class="form-check-label" for="checkDentalImplants">Implantes dentales</label>
             </div>
         </div>
@@ -176,7 +176,7 @@
         <div class="mb-3">
             <label id="comunicacionPersonal" for="comunicacionPersonal">¿Crees que la comunicación del personal dental es clara y comprensible?</label>
             <div class="form-check">
-                <input class="form-check-input" type="radio" name="experience2" id="veryPositive2" value="positive">
+                <input class="form-check-input" type="radio" name="experience2" id="veryPositive2" value="veryPositive">
                 <label class="form-check-label" for="veryPositive2">Muy positiva</label>
             </div>
             <div class="form-check">
@@ -201,7 +201,7 @@
         <div class="mb-3">
             <label id="experienciaAgenda" for="experienciaAgenda">¿Como ha sido tu experiencia con nuesta agenda virtual?</label>
             <div class="form-check">
-                <input class="form-check-input" type="radio" name="experience3" id="veryPositive3" value="positive">
+                <input class="form-check-input" type="radio" name="experience3" id="veryPositive3" value="veryPositive">
                 <label class="form-check-label" for="veryPositive3">Muy positiva</label>
             </div>
             <div class="form-check">
@@ -227,9 +227,7 @@
 
     <div class="Resultados">
         <h2 class="pt-3 pb-3" id="res0"></h2>
-        <p id="res1"></p>
-        <p id="res2"></p>
-        <p id="res3"></p>
+        <p id="res" name="res"></p>
     </div>
 </div>
 
@@ -271,6 +269,9 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.13/lottie.min.js"></script>
 <!-- libreria Lottie JS-->
 <script src="https://unpkg.com/@lottiefiles/lottie-player@0.3.0/dist/lottie-player.js"></script>
+
+<!-- mail -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
 </body>
 </html>
