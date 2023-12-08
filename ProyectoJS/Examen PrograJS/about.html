@@ -1,72 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-ZyZXEAg3QhqLMpG8r+5A/kd1waMI9q9M/GWjrruzaU6Pp+w5cjX6J0TmCOlE3FFdB" crossorigin="anonymous">
-    <Script src="https://aframe.io/releases/1.4.2/aframe.min.js"></Script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha384-ZyZXEAg3QhqLMpG8r+5A/kd1waMI9q9M/GWjrruzaU6Pp+w5cjX6J0TmCOlE3FFdB"
+      crossorigin="anonymous"
+    />
+    <script src="https://aframe.io/releases/1.4.2/aframe.min.js"></script>
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fslightbox@2.8.3/dist/fslightbox.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/fslightbox@2.8.3/dist/fslightbox.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
     <title>Sobre Nosotros</title>
-</head>
-<style>
+  </head>
+  <style>
     /* Estilos modernos para los divs */
     .card {
-        /* background-color: #6aa29e; Fondo de la tarjeta en #4f6e71 */
-        border: none;
-        border-radius: 10px; /* Bordes redondeados */
-        box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+      /* background-color: #6aa29e; Fondo de la tarjeta en #4f6e71 */
+      border: none;
+      border-radius: 10px; /* Bordes redondeados */
+      box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
     }
 
     .card .card-body {
-        padding: 20px;
-        background-color: #f8f5f1;
+      padding: 20px;
+      background-color: #f8f5f1;
     }
 
     .card .number {
-        font-size: 2rem;
-        color: #b4c6c8; /* Color de los números en #b4c6c8 */
+      font-size: 2rem;
+      color: #b4c6c8; /* Color de los números en #b4c6c8 */
     }
 
     .card .card-title {
-        color: #20817b; /* Color del título de la tarjeta en #2a484b */
-        font-size: 1.5rem; /* Tamaño del título */
-        margin-top: 10px;
+      color: #20817b; /* Color del título de la tarjeta en #2a484b */
+      font-size: 1.5rem; /* Tamaño del título */
+      margin-top: 10px;
     }
 
-    .card p{
-        color: #1c3735;
+    .card p {
+      color: #1c3735;
     }
 
-    .card a{
-        background-color: #009e92;
+    .card a {
+      background-color: #009e92;
     }
 
     header {
-    background-color: aqua;
-    position: relative;
-    height: 500px;
-    background: url('./img/tools.jpeg') no-repeat center center fixed;
-    background-size: cover;
-    /* overflow: hidden; */
+      background-color: aqua;
+      position: relative;
+      height: 500px;
+      background: url('./img/tools.jpeg') no-repeat center center fixed;
+      background-size: cover;
+      /* overflow: hidden; */
+    }
 
-}
-
-header::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color:  #edd4b367; /* #a19a9a7d Puedes ajustar el valor alpha para controlar la opacidad */
-}
-.btnContact {
+    header::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #edd4b367; /* #a19a9a7d Puedes ajustar el valor alpha para controlar la opacidad */
+    }
+    .btnContact {
       background-color: rgb(56, 226, 198);
       border-radius: 15px;
       font-weight: bold;
@@ -85,153 +100,181 @@ header::before {
     header button:hover {
       background-color: rgba(33, 166, 155, 0.643);
     }
+  </style>
 
-</style>
-
-<body>
+  <body>
     <header>
+      <nav
+        class="navbar navbar-expand-lg navbar-dark"
+        style="background-color: transparent"
+      >
+        <div
+          class="container-fluid"
+          style="height: 125px; margin-top: 25px; margin-left: 180px"
+        >
+          <a class="navbar-brand" href="homePage.html">
+            <img src="img/LogoBlanco.png" id="logo" alt="" />
+          </a>
 
-    
-        <nav class="  navbar navbar-expand-lg navbar-dark" style="background-color: transparent;">
-            <div class="container-fluid" style="height: 125px; margin-top: 25px;margin-left: 180px;">
-                <a class="navbar-brand" href="homePage.html">
-                    <img src="img/LogoBlanco.png" id="logo" alt="">
-                </a>
-            
-    
-                <div class="collapse navbar-collapse" id="navbarNav" style="margin-left:500px; margin-bottom: 100px;">
-                    <ul class="navbar-nav ml-auto" >
-                        <li class="nav-item">
-                            <a class="nav-link" href="homePage.html" style="color: #e8efef;">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="about.html" style="color: #e8efef;">Sobre Nosotros</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="servicios.html" style="color: #e8efef;">Servicios</a>
-                        </li>
-                        
-                        <li class="nav-item">
-                            <a class="nav-link" href="resultados.html" style="color: #e8efef;">Galeria</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="paraPacientes.html" style="color: #e8efef;">Para Pacientes</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="Contacto.html" style="color: #e8efef;">Contacto</a>
-                        </li>
-                    </ul>
-    
-                    <div class="navButtons">
-                        <a href="cotiza.html">
-                            <button>
-                                Cotiza Precios
-                            </button>
-                        </a>
-            
-                        <a href="aplicacion.html">
-                        <button>
-                            Agenda tu cita
-                        </button>
-                    </a>
-    
-                    </div>
-                </div>
+          <div
+            class="collapse navbar-collapse"
+            id="navbarNav"
+            style="margin-left: 500px; margin-bottom: 100px"
+          >
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="homePage.html" style="color: #e8efef"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html" style="color: #e8efef"
+                  >Sobre Nosotros</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="servicios.html" style="color: #e8efef"
+                  >Servicios</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="resultados.html"
+                  style="color: #e8efef"
+                  >Galeria</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="paraPacientes.html"
+                  style="color: #e8efef"
+                  >Para Pacientes</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Contacto.html" style="color: #e8efef"
+                  >Contacto</a
+                >
+              </li>
+            </ul>
+
+            <div class="navButtons">
+              <a href="cotiza.html">
+                <button>Cotiza Precios</button>
+              </a>
+
+              <a href="aplicacion.html">
+                <button>Agenda tu cita</button>
+              </a>
             </div>
-    
-    
-        </nav>
-    
+          </div>
+        </div>
+      </nav>
     </header>
-    
 
-<!-- video section -->
-<section class="AboutUS1Div text-center"> 
-    <h2>SIRVIENDO A NUESTRA PROPIA COMUNIDAD</h2>
-    <h1>LO QUE NOS HACE ÚNICOS</h1>
-    
+    <!-- video section -->
+    <section class="AboutUS1Div text-center">
+      <h2>SIRVIENDO A NUESTRA PROPIA COMUNIDAD</h2>
+      <h1>LO QUE NOS HACE ÚNICOS</h1>
 
-    <div class="container mt-3">
+      <div class="container mt-3">
         <div class="row">
-            <div class="col">
-                <p><i class="fas fa-check"></i> Control Centralizado</p>
-            </div>
-        
-            <div class="col">
-                <p><i class="fas fa-check"></i> La última y mejor tecnología</p>
-            </div>
-        
-            <div class="col">
-                <p><i class="fas fa-check"></i> Libertad para atender las necesidades individuales de nuestros pacientes.</p>
-            </div>
-        
-            <div class="col">
-                <p><i class="fas fa-check"></i> Sin restricciones corporativas en la atención al paciente</p>
-            </div>
+          <div class="col">
+            <p><i class="fas fa-check"></i> Control Centralizado</p>
+          </div>
+
+          <div class="col">
+            <p><i class="fas fa-check"></i> La última y mejor tecnología</p>
+          </div>
+
+          <div class="col">
+            <p>
+              <i class="fas fa-check"></i> Libertad para atender las necesidades
+              individuales de nuestros pacientes.
+            </p>
+          </div>
+
+          <div class="col">
+            <p>
+              <i class="fas fa-check"></i> Sin restricciones corporativas en la
+              atención al paciente
+            </p>
+          </div>
         </div>
 
-        <div class="row AboutUS1DivVideo ">
-            <a href="https://www.youtube.com/embed/lw7xIB0kPCo" target="_blank">
-                <video autoplay muted loop playsinline controls poster="https://i.ytimg.com/vi/lw7xIB0kPCo/maxresdefault.jpg" style="height: 500px; width: 800px;">
-                    <source src="img/dentist.mp4" type="video/mp4">
-                </video>
-            </a>
+        <div class="row AboutUS1DivVideo">
+          <a href="https://www.youtube.com/embed/lw7xIB0kPCo" target="_blank">
+            <video
+              autoplay
+              muted
+              loop
+              playsinline
+              controls
+              poster="https://i.ytimg.com/vi/lw7xIB0kPCo/maxresdefault.jpg"
+              style="height: 500px; width: 800px"
+            >
+              <source src="img/dentist.mp4" type="video/mp4" />
+            </video>
+          </a>
         </div>
-        
-    </div>
-</section>
+      </div>
+    </section>
 
-<!-- nuestros integrantes -->
-<section class="integranteDiv  mt-5">
-    <h2 class="">CONOCE A NUESTROS ESPECIALISTAS</h2>
-    <h1 class="">TODO UN EQUIPO SOLO PARA VOS</h1>
+    <!-- nuestros integrantes -->
+    <section class="integranteDiv mt-5">
+      <h2 class="">CONOCE A NUESTROS ESPECIALISTAS</h2>
+      <h1 class="">TODO UN EQUIPO SOLO PARA VOS</h1>
 
-    <div class="container mt-4">
+      <div class="container mt-4">
         <div class="row">
+          <div class="col-md-3 integrante-col">
+            <img src="img/doctora2.jpg" alt="" class="imagen-rectangular" />
+            <p class="p1">CAMILLA. TODD SMITH</p>
+            <p class="p2">Odontología General</p>
+            <p class="p3">Preventivo</p>
+            <button>Ver Más</button>
+          </div>
 
-            <div class="col-md-3 integrante-col ">
-                <img src="img/doctora2.jpg" alt="" class="imagen-rectangular">
-                <p class="p1">CAMILLA. TODD SMITH</p>
-                <p class="p2">Odontología General</p>
-                <p class="p3">Preventivo</p>
-                <button>Ver Más</button>
-            </div>
+          <div class="col-md-3 integrante-col">
+            <img src="img/doctor4.jpeg" alt="" class="imagen-rectangular" />
+            <p class="p1">DR. DOUGLAS CAMPBELL</p>
+            <p class="p2">Ortodoncista</p>
+            <p class="p3">Cosmético</p>
+            <button>Ver Más</button>
+          </div>
 
-            <div class="col-md-3 integrante-col">
-                <img src="img/doctor4.jpeg" alt="" class="imagen-rectangular">
-                <p class="p1">DR. DOUGLAS CAMPBELL</p>
-                <p class="p2">Ortodoncista</p>
-                <p class="p3">Cosmético</p>
-                <button>Ver Más</button>
-            </div>
+          <div class="col-md-3 integrante-col">
+            <img src="img/doctor5.jpeg" alt="" class="imagen-rectangular" />
+            <p class="p1">DR. NOLAN BELLISARIO</p>
+            <p class="p2">Cirugía Oral y Maxilofacial</p>
+            <p class="p3">Cosmético</p>
+            <button>Ver Más</button>
+          </div>
 
-            <div class="col-md-3 integrante-col">
-                <img src="img/doctor5.jpeg" alt="" class="imagen-rectangular">
-                <p class="p1">DR. NOLAN BELLISARIO</p>
-                <p class="p2">Cirugía Oral y Maxilofacial</p>
-                <p class="p3">Cosmético</p>
-                <button>Ver Más</button>
-            </div>
-
-            <div class="col-md-3 integrante-col">
-                <img src="img/dcotora3.jpg" alt="" class="imagen-rectangular">
-                <p class="p1">DR. MEGAN LEE</p>
-                <p class="p2">Periodoncia</p>
-                <p class="p3">Preventivo</p>
-                <button>Ver Más</button>
-            </div>
-
+          <div class="col-md-3 integrante-col">
+            <img src="img/dcotora3.jpg" alt="" class="imagen-rectangular" />
+            <p class="p1">DR. MEGAN LEE</p>
+            <p class="p2">Periodoncia</p>
+            <p class="p3">Preventivo</p>
+            <button>Ver Más</button>
+          </div>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
-<!-- recorrido -->
-<section class="AboutUS1Div text-center">
-    <h1 class="text-center mt-5 mb-5">CONOCE NUESTRAS INSTALACIONES</h1>
-</section>
+    <!-- recorrido -->
+    <section class="AboutUS1Div text-center">
+      <h1 class="text-center mt-5 mb-5">CONOCE NUESTRAS INSTALACIONES</h1>
+    </section>
 
-<div class="container-fluid" style="position: relative; overflow: hidden; width: 100%; height: 800px;">
-    <a-scene embedded style="width: 100%; height: 100%;">
+    <div
+      class="container-fluid"
+      style="position: relative; overflow: hidden; width: 100%; height: 800px"
+    >
+      <a-scene embedded style="width: 100%; height: 100%">
         <a-sky src="img/escueladental.jpg"></a-sky>
 
         <!-- Otros elementos de la escena -->
@@ -239,96 +282,138 @@ header::before {
         <a-camera></a-camera>
 
         <!-- <a-text font="" value="Bienvenidos(as)" witdh="10" position="-3.5 3.25 -1.5" rotation="0 0 0"></a-text> -->
-    </a-scene>
-</div>
-
-
-
-<!-- servicios -->
-
-
-
-<!-- pestanas -->
-<section class="container-fluid tapsSection" style="background-color:#009e9163;">
-
-<div class="row">
-
-<div class="col-6 mb-3" >
-    <div style="background-color:#009e91fb;">
-    <button class="tap" id="Escazu" onclick="verificarSede('Escazu'); openMap('https://www.google.com/maps/embed?pb=%211m26%211m12%211m3%211d62881.57629335251%212d-84.08766018832796%213d9.925752784900489%212m3%211f0%212f0%213f0%213m2%211i1024%212i768%214f13.1%214m11%213e6%214m3%213m2%211d9.9269496%212d-84.0273158%214m5%211s0x8fa0e3f13462cc7b%3A0x97219232a6ee2da8%212scenfotec%20san%20pedro%20maps%213m2%211d9.9313846%212d-84.0641474%215e0%213m2%211sen%212scr')">Escazu</button>
-    <button class="tap" id="SanPedro" onclick="verificarSede('SanPedro'); openMap('https://www.google.com/maps/embed?pb=%211m18%211m12%211m3%211d3930.0308996927915%212d-84.06672232327267%213d9.931384590170499%212m3%211f0%212f0%213f0%213m2%211i1024%212i768%214f13.1%213m3%211m2%211s0x8fa0e3f13462cc7b%3A0x97219232a6ee2da8%212sCenfotec%215e0%213m2%211sen%212scr%214v1699909565628%215m2%211sen%212scr')">San Pedro</button>
-    <button class="tap" id="Heredia" onclick="verificarSede('Heredia'); openMap('https://www.google.com/maps/embed?pb=%211m18%211m12%211m3%211d982.5698098005569%212d-84.06853453032724%213d9.910685399386887%212m3%211f0%212f0%213f0%213m2%211i1024%212i768%214f13.1%213m3%211m2%211s0x8fa0e30e76ba452f%3A0x2e66cf32e4ccc50f%212sSanta%20Marta%2C%20San%20Jos%C3%A9%20Province%2C%20San%20Jos%C3%A9%215e0%213m2%211sen%212scr%214v1699909723898%215m2%211sen%212scr')">Heredia</button>
+      </a-scene>
     </div>
 
-    <div class="container" id="SedeInfo">
-        <h3 class="pTaps1">¡Estamos para servirte!</h3>
-        <p class="pTaps2">Nuestro Horario de Atencion: De Lunes a Sabado de 9 AM a 6 PM.</p>
-        <p class="pTaps2">Seleciona la sede de tu preferencia:</p>
-        <h1 id="SedeName" class="pTaps1"></h1>
-    <P ID="SedeTelefono" class="pTaps2"></P>
-    <p id="SedeCorreo" class="pTaps2"></p>
-    </div>
-</div>
+    <!-- servicios -->
 
-<div class="col-6">
-    <div id="map-container">
-    <iframe id="map" width="100%" height="100%" style="border: none;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-</div>
+    <!-- pestanas -->
+    <section
+      class="container-fluid tapsSection"
+      style="background-color: #009e9163"
+    >
+      <div class="row">
+        <div class="col-6 mb-3">
+          <div style="background-color: #009e91fb">
+            <button
+              class="tap"
+              id="Escazu"
+              onclick="verificarSede('Escazu'); openMap('https://www.google.com/maps/embed?pb=%211m26%211m12%211m3%211d62881.57629335251%212d-84.08766018832796%213d9.925752784900489%212m3%211f0%212f0%213f0%213m2%211i1024%212i768%214f13.1%214m11%213e6%214m3%213m2%211d9.9269496%212d-84.0273158%214m5%211s0x8fa0e3f13462cc7b%3A0x97219232a6ee2da8%212scenfotec%20san%20pedro%20maps%213m2%211d9.9313846%212d-84.0641474%215e0%213m2%211sen%212scr')"
+            >
+              Escazu
+            </button>
+            <button
+              class="tap"
+              id="SanPedro"
+              onclick="verificarSede('SanPedro'); openMap('https://www.google.com/maps/embed?pb=%211m18%211m12%211m3%211d3930.0308996927915%212d-84.06672232327267%213d9.931384590170499%212m3%211f0%212f0%213f0%213m2%211i1024%212i768%214f13.1%213m3%211m2%211s0x8fa0e3f13462cc7b%3A0x97219232a6ee2da8%212sCenfotec%215e0%213m2%211sen%212scr%214v1699909565628%215m2%211sen%212scr')"
+            >
+              San Pedro
+            </button>
+            <button
+              class="tap"
+              id="Heredia"
+              onclick="verificarSede('Heredia'); openMap('https://www.google.com/maps/embed?pb=%211m18%211m12%211m3%211d982.5698098005569%212d-84.06853453032724%213d9.910685399386887%212m3%211f0%212f0%213f0%213m2%211i1024%212i768%214f13.1%213m3%211m2%211s0x8fa0e30e76ba452f%3A0x2e66cf32e4ccc50f%212sSanta%20Marta%2C%20San%20Jos%C3%A9%20Province%2C%20San%20Jos%C3%A9%215e0%213m2%211sen%212scr%214v1699909723898%215m2%211sen%212scr')"
+            >
+              Heredia
+            </button>
+          </div>
 
-</div>
-<style>
-    /* Ajusta el estilo según sea necesario */
-    #map-container {
-        width: 100%;
-        height: 370px;
-    }
-</style>
-</section>
-
-
-<footer>
-        <div class="container">
-            <div class="row">
-    
-            <div class="col-6">
-            <div class="footer-logo" style="margin-top:45px;">
-                <a href="#">D E N T A L C A R E</a>
-            </div>
-            
-            </div>
-            
-            <div class="col-6">
-                <ul class="social-links">
-                    <li><a href="#" target="_blank"><i class="fab fa-facebook"></i> Facebook</a></li>
-                    <li><a href="#" target="_blank"><i class="fab fa-twitter"></i> Twitter</a></li>
-                    <li><a href="#" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
-                    <li><a href="#" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
-                </ul>
-            <div class="contact-info">
-                <p>Dirección: San Pedro, Montes de Oca, 300 metros sur del parque Central.</p>
-                <p>Teléfono: +123 456 789</p>
-                <p>Correo Electrónico: <a href="mailto:info@empresa.com">info@dentalcare.com</a></p>
-            </div>
-            </div>
-    
-            </div>
+          <div class="container" id="SedeInfo">
+            <h3 class="pTaps1">¡Estamos para servirte!</h3>
+            <p class="pTaps2">
+              Nuestro Horario de Atencion: De Lunes a Sabado de 9 AM a 6 PM.
+            </p>
+            <p class="pTaps2">Seleciona la sede de tu preferencia:</p>
+            <h1 id="SedeName" class="pTaps1"></h1>
+            <p id="SedeTelefono" class="pTaps2"></p>
+            <p id="SedeCorreo" class="pTaps2"></p>
+          </div>
         </div>
-</footer>
 
+        <div class="col-6">
+          <div id="map-container">
+            <iframe
+              id="map"
+              width="100%"
+              height="100%"
+              style="border: none"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+      <style>
+        /* Ajusta el estilo según sea necesario */
+        #map-container {
+          width: 100%;
+          height: 370px;
+        }
+      </style>
+    </section>
 
-<script src="js/main.js"></script>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <div class="footer-logo" style="margin-top: 45px">
+              <a href="#">D E N T A L C A R E</a>
+            </div>
+          </div>
 
-<script src="js/fslightbox.js"></script>
-<script src="js/main.js"></script>
+          <div class="col-6">
+            <ul class="social-links">
+              <li>
+                <a href="#" target="_blank"
+                  ><i class="fab fa-facebook"></i> Facebook</a
+                >
+              </li>
+              <li>
+                <a href="#" target="_blank"
+                  ><i class="fab fa-twitter"></i> Twitter</a
+                >
+              </li>
+              <li>
+                <a href="#" target="_blank"
+                  ><i class="fab fa-linkedin"></i> LinkedIn</a
+                >
+              </li>
+              <li>
+                <a href="#" target="_blank"
+                  ><i class="fab fa-instagram"></i> Instagram</a
+                >
+              </li>
+            </ul>
+            <div class="contact-info">
+              <p>
+                Dirección: San Pedro, Montes de Oca, 300 metros sur del parque
+                Central.
+              </p>
+              <p>Teléfono: +123 456 789</p>
+              <p>
+                Correo Electrónico:
+                <a href="mailto:info@empresa.com">info@dentalcare.com</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/fslightbox@2.8.3/dist/fslightbox.min.js"></script>
+    <script src="js/main.js"></script>
 
-<!-- <script src="https://kit.fontawesome.com/adcf6a625e.js" crossorigin="anonymous"></script> -->
+    <script src="js/fslightbox.js"></script>
+    <script src="js/main.js"></script>
 
-</body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/fslightbox@2.8.3/dist/fslightbox.min.js"></script>
+
+    <!-- <script src="https://kit.fontawesome.com/adcf6a625e.js" crossorigin="anonymous"></script> -->
+  </body>
 </html>
-
-

@@ -1,277 +1,492 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
     <title>Encuesta Clínica Dental</title>
-</head>
-<body>
+  </head>
+  <body>
     <style>
-        body {
-                    background-color: #f8f5f18e;
-                    /* color: #009e91f0; */
-                }
-                
-        .form-group {
-                    margin-top: 10px;
-                }
-        
-                header {
-                background-color: aqua;
-                position: relative;
-                height: 500px;
-                background: url('./img/tools.jpeg') no-repeat center center fixed;
-                background-size: cover;
-                /* overflow: hidden; */
-                
-                }
-                
-                header::before {
-                content: "";
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                background-color:  #edd4b367; /* #a19a9a7d Puedes ajustar el valor alpha para controlar la opacidad */
-                }
-    </style>
-    <header >
+      body {
+        background-color: #f8f5f18e;
+        /* color: #009e91f0; */
+      }
 
-    
-        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: transparent;">
-            <div class="container-fluid" style="height: 125px; margin-top: 25px;margin-left: 180px;">
-                <a class="navbar-brand" href="homePage.html">
-                    <img src="img/LogoBlanco.png" id="logo" alt="">
-                </a>
-            
-    
-                <div class="collapse navbar-collapse" id="navbarNav" style="margin-left:500px; margin-bottom: 100px;">
-                    <ul class="navbar-nav ml-auto" >
-                        <li class="nav-item">
-                            <a class="nav-link" href="homePage.html" style="color: #e8efef;">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="about.html" style="color: #e8efef;">Sobre Nosotros</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="servicios.html" style="color: #e8efef;">Servicios</a>
-                        </li>
-                        
-                        <li class="nav-item">
-                            <a class="nav-link" href="resultados.html" style="color: #e8efef;">Galeria</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="paraPacientes.html" style="color: #e8efef;">Para Pacientes</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="Contacto.html" style="color: #e8efef;">Contacto</a>
-                        </li>
-                    </ul>
-    
-                    <div class="navButtons">
-                        <a href="cotiza.html">
-                            <button>
-                                Cotiza Precios
-                            </button>
-                        </a>
-            
-                        <a href="aplicacion.html">
-                        <button>
-                            Agenda tu cita
-                        </button>
-                    </a>
-    
-                    </div>
-                </div>
+      .form-group {
+        margin-top: 10px;
+      }
+
+      header {
+        background-color: aqua;
+        position: relative;
+        height: 500px;
+        background: url('./img/tools.jpeg') no-repeat center center fixed;
+        background-size: cover;
+        /* overflow: hidden; */
+      }
+
+      header::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #edd4b367; /* #a19a9a7d Puedes ajustar el valor alpha para controlar la opacidad */
+      }
+    </style>
+    <header>
+      <nav
+        class="navbar navbar-expand-lg navbar-dark"
+        style="background-color: transparent"
+      >
+        <div
+          class="container-fluid"
+          style="height: 125px; margin-top: 25px; margin-left: 180px"
+        >
+          <a class="navbar-brand" href="homePage.html">
+            <img src="img/LogoBlanco.png" id="logo" alt="" />
+          </a>
+
+          <div
+            class="collapse navbar-collapse"
+            id="navbarNav"
+            style="margin-left: 500px; margin-bottom: 100px"
+          >
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="homePage.html" style="color: #e8efef"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html" style="color: #e8efef"
+                  >Sobre Nosotros</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="servicios.html" style="color: #e8efef"
+                  >Servicios</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="resultados.html"
+                  style="color: #e8efef"
+                  >Galeria</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="paraPacientes.html"
+                  style="color: #e8efef"
+                  >Para Pacientes</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Contacto.html" style="color: #e8efef"
+                  >Contacto</a
+                >
+              </li>
+            </ul>
+
+            <div class="navButtons">
+              <a href="cotiza.html">
+                <button>Cotiza Precios</button>
+              </a>
+
+              <a href="aplicacion.html">
+                <button>Agenda tu cita</button>
+              </a>
             </div>
-    
-    
-        </nav>
-    
+          </div>
+        </div>
+      </nav>
     </header>
 
-<div class="container mt-5">
-    <h1 class="mb-4">Encuesta DentalCare</h1>
+    <div class="container mt-5">
+      <h1 class="mb-4">Encuesta DentalCare</h1>
 
-    <form id="form2">
-
+      <form id="form">
         <!-- Pregunta de Respuesta Input -->
         <div class="mb-3">
-            <label for="satisfaction">En una escala del 1 al 10, ¿cómo calificarías tu nivel de satisfacción general con los servicios dentales que has recibido hasta ahora?</label>
-            <input type="number" class="form-control" id="satisfaction" name="satisfaction" min="1" max="10">
+          <label for="satisfaction"
+            >En una escala del 1 al 10, ¿cómo calificarías tu nivel de
+            satisfacción general con los servicios dentales que has recibido
+            hasta ahora?</label
+          >
+          <input
+            type="number"
+            class="form-control"
+            id="satisfaction"
+            name="satisfaction"
+            min="1"
+            max="10"
+          />
         </div>
 
         <!-- Preguntas de Checkbox -->
         <div class="mb-3">
-            <label id="OpcionesImportantes" for="OpcionesImportantes">Marca todas las opciones que consideres importantes al elegir una clínica dental.</label>
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="cost" id="checkCost" name="checkCost">
-                <label class="form-check-label" for="checkCost" >Costo</label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="location" id="checkLocation" name="checkLocation">
-                <label class="form-check-label" for="checkLocation">Ubicación</label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="reputation" id="checkReputation" name="checkReputation">
-                <label class="form-check-label" for="checkReputation">Reputación</label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="additionalServices" id="checkAdditionalServices">
-                <label class="form-check-label" for="checkAdditionalServices">Servicios adicionales</label>
-            </div>
+          <label id="OpcionesImportantes" for="OpcionesImportantes"
+            >Marca todas las opciones que consideres importantes al elegir una
+            clínica dental.</label
+          >
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value="cost"
+              id="checkCost"
+            />
+            <label class="form-check-label" for="checkCost">Costo</label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value="location"
+              id="checkLocation"
+            />
+            <label class="form-check-label" for="checkLocation"
+              >Ubicación</label
+            >
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value="reputation"
+              id="checkReputation"
+            />
+            <label class="form-check-label" for="checkReputation"
+              >Reputación</label
+            >
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value="additionalServices"
+              id="checkAdditionalServices"
+            />
+            <label class="form-check-label" for="checkAdditionalServices"
+              >Servicios adicionales</label
+            >
+          </div>
         </div>
 
         <!-- Preguntas de Checkbox -->
         <div class="mb-3">
-            <label id="serviciosAdicionales" for="serviciosAdicionales">¿Qué servicios adicionales te gustaría ver en la clínica dental? (Selecciona todas las que apliquen)</label>
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="cosmeticDentistry" id="checkCosmeticDentistry" name="checkCosmeticDentistry">
-                <label class="form-check-label" for="checkCosmeticDentistry">Odontología cosmética</label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="orthodontics" id="checkOrthodontics" name="checkOrthodontics">
-                <label class="form-check-label" for="checkOrthodontics">Ortodoncia</label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="teethWhitening" id="checkTeethWhitening" name="checkTeethWhitening">
-                <label class="form-check-label" for="checkTeethWhitening">Blanqueamiento dental</label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="dentalImplants" id="checkDentalImplants" name="checkDentalImplants" >
-                <label class="form-check-label" for="checkDentalImplants">Implantes dentales</label>
-            </div>
-        </div>
-
-
-        <!-- Preguntas de Radio -->
-        <div class="mb-3">
-            <label id="experienciaClinica" for="experienciaClinica">¿Cómo describirías tu experiencia general en la clínica dental hasta ahora?</label>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="experience1" id="veryPositive1" value="veryPositive">
-                <label class="form-check-label" for="veryPositive1">Muy positiva</label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="experience1" id="positive1" value="positive">
-                <label class="form-check-label" for="positive1">Positiva</label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="experience1" id="neutral1" value="neutral">
-                <label class="form-check-label" for="neutral1">Neutral</label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="experience1" id="negative1" value="negative">
-                <label class="form-check-label" for="negative1">Negativa</label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="experience1" id="veryNegative1" value="veryNegative">
-                <label class="form-check-label" for="veryNegative1">Muy negativa</label>
-            </div>
-        </div>
-
-        <!-- Preguntas de Radio -->
-        <div class="mb-3">
-            <label id="comunicacionPersonal" for="comunicacionPersonal">¿Crees que la comunicación del personal dental es clara y comprensible?</label>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="experience2" id="veryPositive2" value="veryPositive">
-                <label class="form-check-label" for="veryPositive2">Muy positiva</label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="experience2" id="positive2" value="positive">
-                <label class="form-check-label" for="positive2">Positiva</label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="experience2" id="neutral2" value="neutral">
-                <label class="form-check-label" for="neutral2">Neutral</label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="experience2" id="negative2" value="negative">
-                <label class="form-check-label" for="negative2">Negativa</label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="experience2" id="veryNegative2" value="veryNegative">
-                <label class="form-check-label" for="veryNegative2">Muy negativa</label>
-            </div>
+          <label id="serviciosAdicionales" for="serviciosAdicionales"
+            >¿Qué servicios adicionales te gustaría ver en la clínica dental?
+            (Selecciona todas las que apliquen)</label
+          >
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value="cosmeticDentistry"
+              id="checkCosmeticDentistry"
+            />
+            <label class="form-check-label" for="checkCosmeticDentistry"
+              >Odontología cosmética</label
+            >
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value="orthodontics"
+              id="checkOrthodontics"
+            />
+            <label class="form-check-label" for="checkOrthodontics"
+              >Ortodoncia</label
+            >
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value="teethWhitening"
+              id="checkTeethWhitening"
+            />
+            <label class="form-check-label" for="checkTeethWhitening"
+              >Blanqueamiento dental</label
+            >
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value="dentalImplants"
+              id="checkDentalImplants"
+            />
+            <label class="form-check-label" for="checkDentalImplants"
+              >Implantes dentales</label
+            >
+          </div>
         </div>
 
         <!-- Preguntas de Radio -->
         <div class="mb-3">
-            <label id="experienciaAgenda" for="experienciaAgenda">¿Como ha sido tu experiencia con nuesta agenda virtual?</label>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="experience3" id="veryPositive3" value="veryPositive">
-                <label class="form-check-label" for="veryPositive3">Muy positiva</label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="experience3" id="positive3" value="positive">
-                <label class="form-check-label" for="positive3">Positiva</label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="experience3" id="neutral3" value="neutral">
-                <label class="form-check-label" for="neutral3">Neutral</label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="experience3" id="negative3" value="negative">
-                <label class="form-check-label" for="negative3">Negativa</label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="experience3" id="veryNegative3" value="veryNegative">
-                <label class="form-check-label" for="veryNegative3">Muy negativa</label>
-            </div>
+          <label id="experienciaClinica" for="experienciaClinica"
+            >¿Cómo describirías tu experiencia general en la clínica dental
+            hasta ahora?</label
+          >
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="experience1"
+              id="veryPositive1"
+              value="veryPositive"
+            />
+            <label class="form-check-label" for="veryPositive1"
+              >Muy positiva</label
+            >
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="experience1"
+              id="positive1"
+              value="positive"
+            />
+            <label class="form-check-label" for="positive1">Positiva</label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="experience1"
+              id="neutral1"
+              value="neutral"
+            />
+            <label class="form-check-label" for="neutral1">Neutral</label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="experience1"
+              id="negative1"
+              value="negative"
+            />
+            <label class="form-check-label" for="negative1">Negativa</label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="experience1"
+              id="veryNegative1"
+              value="veryNegative"
+            />
+            <label class="form-check-label" for="veryNegative1"
+              >Muy negativa</label
+            >
+          </div>
         </div>
 
-        <button type="button" class="btn btn-primary" onclick="validateForm2()">Enviar Encuesta</button>
-    </form>
+        <!-- Preguntas de Radio -->
+        <div class="mb-3">
+          <label id="comunicacionPersonal" for="comunicacionPersonal"
+            >¿Crees que la comunicación del personal dental es clara y
+            comprensible?</label
+          >
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="experience2"
+              id="veryPositive2"
+              value="veryPositive"
+            />
+            <label class="form-check-label" for="veryPositive2"
+              >Muy positiva</label
+            >
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="experience2"
+              id="positive2"
+              value="positive"
+            />
+            <label class="form-check-label" for="positive2">Positiva</label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="experience2"
+              id="neutral2"
+              value="neutral"
+            />
+            <label class="form-check-label" for="neutral2">Neutral</label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="experience2"
+              id="negative2"
+              value="negative"
+            />
+            <label class="form-check-label" for="negative2">Negativa</label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="experience2"
+              id="veryNegative2"
+              value="veryNegative"
+            />
+            <label class="form-check-label" for="veryNegative2"
+              >Muy negativa</label
+            >
+          </div>
+        </div>
 
-    <div class="Resultados">
+        <!-- Preguntas de Radio -->
+        <div class="mb-3">
+          <label id="experienciaAgenda" for="experienciaAgenda"
+            >¿Como ha sido tu experiencia con nuesta agenda virtual?</label
+          >
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="experience3"
+              id="veryPositive3"
+              value="veryPositive"
+            />
+            <label class="form-check-label" for="veryPositive3"
+              >Muy positiva</label
+            >
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="experience3"
+              id="positive3"
+              value="positive"
+            />
+            <label class="form-check-label" for="positive3">Positiva</label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="experience3"
+              id="neutral3"
+              value="neutral"
+            />
+            <label class="form-check-label" for="neutral3">Neutral</label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="experience3"
+              id="negative3"
+              value="negative"
+            />
+            <label class="form-check-label" for="negative3">Negativa</label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="experience3"
+              id="veryNegative3"
+              value="veryNegative"
+            />
+            <label class="form-check-label" for="veryNegative3"
+              >Muy negativa</label
+            >
+          </div>
+        </div>
+
+        <button type="button" class="btn btn-primary" onclick="validateForm2()">
+          Enviar Encuesta
+        </button>
+      </form>
+
+      <div class="Resultados">
         <h2 class="pt-3 pb-3" id="res0"></h2>
-        <p id="res" name="res"></p>
+        <p id="res"></p>
+      </div>
     </div>
-</div>
 
-<footer>
-    <div class="container">
+    <footer>
+      <div class="container">
         <div class="row">
+          <div class="col-6">
+            <div class="footer-logo" style="margin-top: 45px">
+              <a href="#">D E N T A L C A R E</a>
+            </div>
+          </div>
 
-        <div class="col-6">
-        <div class="footer-logo" style="margin-top:45px;">
-            <a href="#">D E N T A L C A R E</a>
-        </div>
-        
-        </div>
-        
-        <div class="col-6">
+          <div class="col-6">
             <ul class="social-links">
-                <li><a href="#" target="_blank"><i class="fab fa-facebook"></i> Facebook</a></li>
-                <li><a href="#" target="_blank"><i class="fab fa-twitter"></i> Twitter</a></li>
-                <li><a href="#" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
-                <li><a href="#" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
+              <li>
+                <a href="#" target="_blank"
+                  ><i class="fab fa-facebook"></i> Facebook</a
+                >
+              </li>
+              <li>
+                <a href="#" target="_blank"
+                  ><i class="fab fa-twitter"></i> Twitter</a
+                >
+              </li>
+              <li>
+                <a href="#" target="_blank"
+                  ><i class="fab fa-linkedin"></i> LinkedIn</a
+                >
+              </li>
+              <li>
+                <a href="#" target="_blank"
+                  ><i class="fab fa-instagram"></i> Instagram</a
+                >
+              </li>
             </ul>
-        <div class="contact-info">
-            <p>Dirección: San Pedro, Montes de Oca, 300 metros sur del parque Central.</p>
-            <p>Teléfono: +123 456 789</p>
-            <p>Correo Electrónico: <a href="mailto:info@empresa.com">info@dentalcare.com</a></p>
+            <div class="contact-info">
+              <p>
+                Dirección: San Pedro, Montes de Oca, 300 metros sur del parque
+                Central.
+              </p>
+              <p>Teléfono: +123 456 789</p>
+              <p>
+                Correo Electrónico:
+                <a href="mailto:info@empresa.com">info@dentalcare.com</a>
+              </p>
+            </div>
+          </div>
         </div>
-        </div>
+      </div>
+    </footer>
 
-        </div>
-    </div>
-</footer>
+    <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 
-<script src="js/main.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-
-<!-- libreria SWEETALERTE-->
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-<!-- interactividad Lottie JS-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.13/lottie.min.js"></script>
-<!-- libreria Lottie JS-->
-<script src="https://unpkg.com/@lottiefiles/lottie-player@0.3.0/dist/lottie-player.js"></script>
-
-<!-- mail -->
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-
-</body>
+    <!-- libreria SWEETALERTE-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- interactividad Lottie JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.13/lottie.min.js"></script>
+    <!-- libreria Lottie JS-->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@0.3.0/dist/lottie-player.js"></script>
+  </body>
 </html>
